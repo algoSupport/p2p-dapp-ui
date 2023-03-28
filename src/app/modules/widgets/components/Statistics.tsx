@@ -1,7 +1,5 @@
 import React, {FC} from 'react'
 import {
-  StatisticsWidget1,
-  StatisticsWidget2,
   StatisticsWidget3,
   StatisticsWidget4,
   StatisticsWidget5,
@@ -14,75 +12,10 @@ const Statistics: FC = () => {
       {/* begin::Row */}
       <div className='row g-5 g-xl-8'>
         <div className='col-xl-4'>
-          <StatisticsWidget1
-            className='card-xl-stretch mb-xl-8'
-            image='abstract-4.svg'
-            title='Meeting Schedule'
-            time='3:30PM - 4:20PM'
-            description='Create a headline that is informative<br/>and will capture readers'
-          />
-        </div>
-
-        <div className='col-xl-4'>
-          <StatisticsWidget1
-            className='card-xl-stretch mb-xl-8'
-            image='abstract-2.svg'
-            title='Meeting Schedule'
-            time='03 May 2020'
-            description='Great blog posts don’t just happen Even the best bloggers need it'
-          />
-        </div>
-
-        <div className='col-xl-4'>
-          <StatisticsWidget1
-            className='card-xl-stretch mb-5 mb-xl-8'
-            image='abstract-1.svg'
-            title='UI Conference'
-            time='10AM Jan, 2021'
-            description='AirWays - A Front-end solution for airlines build with ReactJS'
-          />
-        </div>
-      </div>
-      {/* end::Row */}
-
-      {/* begin::Row */}
-      <div className='row g-5 g-xl-8'>
-        <div className='col-xl-4'>
-          <StatisticsWidget2
-            className='card-xl-stretch mb-xl-8'
-            avatar='/media/svg/avatars/029-boy-11.svg'
-            title='Arthur Goldstain'
-            description='System & Software Architect'
-          />
-        </div>
-
-        <div className='col-xl-4'>
-          <StatisticsWidget2
-            className='card-xl-stretch mb-xl-8'
-            avatar='/media/svg/avatars/014-girl-7.svg'
-            title='Lisa Bold'
-            description='Marketing & Fanance Manager'
-          />
-        </div>
-
-        <div className='col-xl-4'>
-          <StatisticsWidget2
-            className='card-xl-stretch mb-5 mb-xl-8'
-            avatar='/media/svg/avatars/004-boy-1.svg'
-            title='Nick Stone'
-            description='Customer Support Team'
-          />
-        </div>
-      </div>
-      {/* end::Row */}
-
-      {/* begin::Row */}
-      <div className='row g-5 g-xl-8'>
-        <div className='col-xl-4'>
           <StatisticsWidget3
             className='card-xl-stretch mb-xl-8'
             color='success'
-            title='Weekly Sales'
+            title='7 Day Buy Orders'
             description='Your Weekly Sales Chart'
             change='+100'
           />
