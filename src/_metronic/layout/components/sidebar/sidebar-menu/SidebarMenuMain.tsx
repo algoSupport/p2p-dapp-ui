@@ -34,7 +34,7 @@ const SidebarMenuMain = () => {
         </div>
       </div>
       <SidebarMenuItem
-        to='/crafted/widgets/statistics'
+        to='/overview'
         title='Overview'
         fontIcon='bi-archive'
         icon='/media/icons/duotune/general/gen032.svg'
