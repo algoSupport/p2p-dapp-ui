@@ -16,7 +16,7 @@
   .app-toolbar {
     body:not([data-kt-app-toolbar-fixed='true']) & {
       height: auto;
-      background-color: transparent;
+      background-color: #1a1a27;
       border-top: 0;
       border-bottom: 0;
       box-shadow: none;
@@ -29,7 +29,7 @@
   .app-toolbar {
     body:not([data-kt-app-toolbar-fixed-mobile='true']) & {
       height: auto;
-      background-color: transparent;
+      background-color: #1a1a27;
       border-top: 0;
       border-bottom: 0;
       box-shadow: none;
