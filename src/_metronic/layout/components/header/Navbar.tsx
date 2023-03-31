@@ -14,37 +14,10 @@ const Navbar = () => {
   return (
     <div className='app-navbar flex-shrink-0'>
       <div className={clsx('app-navbar-item', itemClass)}>
-        <div
-          data-kt-menu-trigger="{default: 'click'}"
-          data-kt-menu-attach='parent'
-          data-kt-menu-placement='bottom-end'
-          className={btnClass}
-        >
-          <KTSVG path='/media/icons/duotune/general/gen022.svg' className={btnIconClass} />
-        </div>
-        <HeaderNotificationsMenu />
-      </div>
-
-      <div className={clsx('app-navbar-item', itemClass)}>
-        <div className={clsx('position-relative', btnClass)} id='kt_drawer_chat_toggle'>
-          <KTSVG path='/media/icons/duotune/communication/com012.svg' className={btnIconClass} />
-          <span className='bullet bullet-dot bg-success h-6px w-6px position-absolute translate-middle top-0 start-50 animation-blink' />
-        </div>
-      </div>
-
-      <div className={clsx('app-navbar-item', itemClass)}>
         <ThemeModeSwitcher toggleBtnClass={clsx('btn-active-light-primary btn-custom')} />
       </div>
 
       <div className={clsx('app-navbar-item', itemClass)}>
-        <div
-          className={clsx('cursor-pointer symbol', userAvatarClass)}
-          data-kt-menu-trigger="{default: 'click'}"
-          data-kt-menu-attach='parent'
-          data-kt-menu-placement='bottom-end'
-        >
-          <img src={toAbsoluteUrl('/media/avatars/300-1.jpg')} alt='' />
-        </div>
         <HeaderUserMenu />
       </div>
 

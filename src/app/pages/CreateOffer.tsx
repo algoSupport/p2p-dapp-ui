@@ -57,210 +57,75 @@ const CreateOffer = () => {
   }, [stepperRef])
 
   return (
-    <div
-      ref={stepperRef}
-      className='stepper stepper-pills stepper-column d-flex flex-column flex-xl-row flex-row-fluid'
-      id='kt_create_account_stepper'
-    >
-      {/* begin::Aside*/}
-      <div className='card d-flex justify-content-center justify-content-xl-start flex-row-auto w-100 w-xl-300px w-xxl-400px me-9'>
-        {/* begin::Wrapper*/}
-        <div className='card-body px-6 px-lg-10 px-xxl-15 py-20'>
-          {/* begin::Nav*/}
-          <div className='stepper-nav'>
-            {/* begin::Step 1*/}
-            <div className='stepper-item current' data-kt-stepper-element='nav'>
-              {/* begin::Wrapper*/}
-              <div className='stepper-wrapper'>
-                {/* begin::Icon*/}
-                <div className='stepper-icon w-40px h-40px'>
-                  <i className='stepper-check fas fa-check'></i>
-                  <span className='stepper-number'>1</span>
-                </div>
-                {/* end::Icon*/}
+    <form className='form w-400px mx-auto mt-20'>
+      {/* begin::Heading */}
+      <div className='text-center mb-11'>
+        <h1 className='text-dark fw-bolder mb-3'>Wallet Connect</h1>
+        <div className='text-gray-500 fw-semibold fs-6'>Connect Your Wallet To Access Cilistia</div>
+      </div>
+      {/* begin::Heading */}
 
-                {/* begin::Label*/}
-                <div className='stepper-label'>
-                  <h3 className='stepper-title'>Offer Type</h3>
-
-                  <div className='stepper-desc fw-semibold'>Open a buy or sell order</div>
-                </div>
-                {/* end::Label*/}
-              </div>
-              {/* end::Wrapper*/}
-
-              {/* begin::Line*/}
-              <div className='stepper-line h-40px'></div>
-              {/* end::Line*/}
-            </div>
-            {/* end::Step 1*/}
-
-            {/* begin::Step 2*/}
-            <div className='stepper-item' data-kt-stepper-element='nav'>
-              {/* begin::Wrapper*/}
-              <div className='stepper-wrapper'>
-                {/* begin::Icon*/}
-                <div className='stepper-icon w-40px h-40px'>
-                  <i className='stepper-check fas fa-check'></i>
-                  <span className='stepper-number'>2</span>
-                </div>
-                {/* end::Icon*/}
-
-                {/* begin::Label*/}
-                <div className='stepper-label'>
-                  <h3 className='stepper-title'>Account Settings</h3>
-                  <div className='stepper-desc fw-semibold'>Setup Your Account Settings</div>
-                </div>
-                {/* end::Label*/}
-              </div>
-              {/* end::Wrapper*/}
-
-              {/* begin::Line*/}
-              <div className='stepper-line h-40px'></div>
-              {/* end::Line*/}
-            </div>
-            {/* end::Step 2*/}
-
-            {/* begin::Step 3*/}
-            <div className='stepper-item' data-kt-stepper-element='nav'>
-              {/* begin::Wrapper*/}
-              <div className='stepper-wrapper'>
-                {/* begin::Icon*/}
-                <div className='stepper-icon w-40px h-40px'>
-                  <i className='stepper-check fas fa-check'></i>
-                  <span className='stepper-number'>3</span>
-                </div>
-                {/* end::Icon*/}
-
-                {/* begin::Label*/}
-                <div className='stepper-label'>
-                  <h3 className='stepper-title'>Business Info</h3>
-                  <div className='stepper-desc fw-semibold'>Your Business Related Info</div>
-                </div>
-                {/* end::Label*/}
-              </div>
-              {/* end::Wrapper*/}
-
-              {/* begin::Line*/}
-              <div className='stepper-line h-40px'></div>
-              {/* end::Line*/}
-            </div>
-            {/* end::Step 3*/}
-
-            {/* begin::Step 4*/}
-            <div className='stepper-item' data-kt-stepper-element='nav'>
-              {/* begin::Wrapper*/}
-              <div className='stepper-wrapper'>
-                {/* begin::Icon*/}
-                <div className='stepper-icon w-40px h-40px'>
-                  <i className='stepper-check fas fa-check'></i>
-                  <span className='stepper-number'>4</span>
-                </div>
-                {/* end::Icon*/}
-
-                {/* begin::Label*/}
-                <div className='stepper-label'>
-                  <h3 className='stepper-title'>Billing Details</h3>
-                  <div className='stepper-desc fw-semibold'>Set Your Payment Methods</div>
-                </div>
-                {/* end::Label*/}
-              </div>
-              {/* end::Wrapper*/}
-
-              {/* begin::Line*/}
-              <div className='stepper-line h-40px'></div>
-              {/* end::Line*/}
-            </div>
-            {/* end::Step 4*/}
-
-            {/* begin::Step 5*/}
-            <div className='stepper-item' data-kt-stepper-element='nav'>
-              {/* begin::Wrapper*/}
-              <div className='stepper-wrapper'>
-                {/* begin::Icon*/}
-                <div className='stepper-icon w-40px h-40px'>
-                  <i className='stepper-check fas fa-check'></i>
-                  <span className='stepper-number'>5</span>
-                </div>
-                {/* end::Icon*/}
-
-                {/* begin::Label*/}
-                <div className='stepper-label'>
-                  <h3 className='stepper-title'>Completed</h3>
-                  <div className='stepper-desc fw-semibold'>Woah, we are here</div>
-                </div>
-                {/* end::Label*/}
-              </div>
-              {/* end::Wrapper*/}
-            </div>
-            {/* end::Step 5*/}
-          </div>
-          {/* end::Nav*/}
+      {/* begin::Login options */}
+      <div className='row g-3 mb-9'>
+        {/* begin::Col */}
+        <div className='col-md-6'>
+          {/* begin::Google link */}
+          <a
+            href='#'
+            className='btn btn-flex btn-outline btn-text-gray-700 btn-active-color-primary bg-state-light flex-center text-nowrap w-100'
+          >
+            <img
+              alt='Logo'
+              src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/1024px-MetaMask_Fox.svg.png?20220831120339'
+              className='h-20px me-3'
+            />
+            Connect Metamask
+          </a>
+          {/* end::Google link */}
         </div>
-        {/* end::Wrapper*/}
+        {/* end::Col */}
+
+        {/* begin::Col */}
+        <div className='col-md-6'>
+          {/* begin::Google link */}
+          <a
+            href='#'
+            className='btn btn-flex btn-outline btn-text-gray-700 btn-active-color-primary bg-state-light flex-center text-nowrap w-100'
+          >
+            <img
+              alt='Logo'
+              src='https://trustwallet.com/assets/images/media/assets/trust_platform.svg'
+              className='theme-dark-show h-20px me-3'
+            />
+            Connect Trust Wallet
+          </a>
+          {/* end::Google link */}
+        </div>
+        {/* end::Col */}
       </div>
-      {/* begin::Aside*/}
+      {/* end::Login options */}
 
-      <div className='d-flex flex-row-fluid flex-center bg-body rounded'>
-        <Formik validationSchema={currentSchema} initialValues={initValues} onSubmit={submitStep}>
-          {() => (
-            <Form className='py-20 w-100 w-xl-700px px-9' noValidate id='kt_create_account_form'>
-              <div className='current' data-kt-stepper-element='content'>
-                <Step1 />
-              </div>
-
-              <div data-kt-stepper-element='content'>
-                <Step2 />
-              </div>
-
-              <div data-kt-stepper-element='content'>
-                <Step3 />
-              </div>
-
-              <div data-kt-stepper-element='content'>
-                <Step4 />
-              </div>
-
-              <div data-kt-stepper-element='content'>
-                <Step5 />
-              </div>
-
-              <div className='d-flex flex-stack pt-10'>
-                <div className='mr-2'>
-                  <button
-                    onClick={prevStep}
-                    type='button'
-                    className='btn btn-lg btn-light-primary me-3'
-                    data-kt-stepper-action='previous'
-                  >
-                    <KTSVG
-                      path='/media/icons/duotune/arrows/arr063.svg'
-                      className='svg-icon-4 me-1'
-                    />
-                    Back
-                  </button>
-                </div>
-
-                <div>
-                  <button type='submit' className='btn btn-lg btn-primary me-3'>
-                    <span className='indicator-label'>
-                      {stepper.current?.currentStepIndex !==
-                        stepper.current?.totatStepsNumber! - 1 && 'Continue'}
-                      {stepper.current?.currentStepIndex ===
-                        stepper.current?.totatStepsNumber! - 1 && 'Submit'}
-                      <KTSVG
-                        path='/media/icons/duotune/arrows/arr064.svg'
-                        className='svg-icon-3 ms-2 me-0'
-                      />
-                    </span>
-                  </button>
-                </div>
-              </div>
-            </Form>
-          )}
-        </Formik>
+      {/* begin::Separator */}
+      <div className='separator separator-content my-14'>
+        <span className='w-125px text-gray-500 fw-semibold fs-7'>No Access?</span>
       </div>
-    </div>
+      {/* end::Separator */}
+
+      {/* end::Wrapper */}
+
+      {/* begin::Action */}
+      <div className='d-grid mb-10'>
+        <a
+          href='https://discord.gg/cilistia'
+          target='_blank'
+          className='btn btn-primary'
+          rel='noreferrer'
+        >
+          <span className='indicator-label'>Visit Our Discord</span>
+        </a>
+      </div>
+      {/* end::Action */}
+    </form>
   )
 }
 

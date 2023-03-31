@@ -8,347 +8,75 @@ type Props = {
 
 const TablesWidget11: React.FC<Props> = ({className}) => {
   return (
-    <div className={`card ${className}`}>
-      {/* begin::Header */}
-      <div className='card-header border-0 pt-5'>
-        <h3 className='card-title align-items-start flex-column'>
-          <span className='card-label fw-bold fs-3 mb-1'>New Arrivals</span>
-          <span className='text-muted mt-1 fw-semibold fs-7'>Over 500 new products</span>
-        </h3>
-        <div className='card-toolbar'>
-          <a href='#' className='btn btn-sm btn-light-primary'>
-            <KTSVG path='/media/icons/duotune/arrows/arr075.svg' className='svg-icon-2' />
-            New Member
+    <form className='form w-400px mx-auto mt-20'>
+      {/* begin::Heading */}
+      <div className='text-center mb-11'>
+        <h1 className='text-dark fw-bolder mb-3'>Wallet Connect</h1>
+        <div className='text-gray-500 fw-semibold fs-6'>Connect Your Wallet To Access Cilistia</div>
+      </div>
+      {/* begin::Heading */}
+
+      {/* begin::Login options */}
+      <div className='row g-3 mb-9'>
+        {/* begin::Col */}
+        <div className='col-md-6'>
+          {/* begin::Google link */}
+          <a
+            href='#'
+            className='btn btn-flex btn-outline btn-text-gray-700 btn-active-color-primary bg-state-light flex-center text-nowrap w-100'
+          >
+            <img
+              alt='Logo'
+              src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/1024px-MetaMask_Fox.svg.png?20220831120339'
+              className='h-20px me-3'
+            />
+            Connect Metamask
           </a>
+          {/* end::Google link */}
         </div>
-      </div>
-      {/* end::Header */}
-      {/* begin::Body */}
-      <div className='card-body py-3'>
-        {/* begin::Table container */}
-        <div className='table-responsive'>
-          {/* begin::Table */}
-          <table className='table align-middle gs-0 gy-4'>
-            {/* begin::Table head */}
-            <thead>
-              <tr className='fw-bold text-muted bg-light'>
-                <th className='ps-4 min-w-325px rounded-start'>Product</th>
-                <th className='min-w-125px'>Price</th>
-                <th className='min-w-125px'>Deposit</th>
-                <th className='min-w-200px'>Agent</th>
-                <th className='min-w-150px'>Status</th>
-                <th className='min-w-200px text-end rounded-end'></th>
-              </tr>
-            </thead>
-            {/* end::Table head */}
-            {/* begin::Table body */}
-            <tbody>
-              <tr>
-                <td>
-                  <div className='d-flex align-items-center'>
-                    <div className='symbol symbol-50px me-5'>
-                      <img
-                        src={toAbsoluteUrl('/media/stock/600x400/img-26.jpg')}
-                        className=''
-                        alt=''
-                      />
-                    </div>
-                    <div className='d-flex justify-content-start flex-column'>
-                      <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
-                        Sant Extreanet Solution
-                      </a>
-                      <span className='text-muted fw-semibold text-muted d-block fs-7'>
-                        HTML, JS, ReactJS
-                      </span>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
-                    $2,790
-                  </a>
-                  <span className='text-muted fw-semibold text-muted d-block fs-7'>Paid</span>
-                </td>
-                <td>
-                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
-                    $520
-                  </a>
-                  <span className='text-muted fw-semibold text-muted d-block fs-7'>Rejected</span>
-                </td>
-                <td>
-                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
-                    Bradly Beal
-                  </a>
-                  <span className='text-muted fw-semibold text-muted d-block fs-7'>Insurance</span>
-                </td>
-                <td>
-                  <span className='badge badge-light-primary fs-7 fw-semibold'>Approved</span>
-                </td>
-                <td className='text-end'>
-                  <a
-                    href='#'
-                    className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
-                  >
-                    <KTSVG path='/media/icons/duotune/general/gen019.svg' className='svg-icon-3' />
-                  </a>
-                  <a
-                    href='#'
-                    className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
-                  >
-                    <KTSVG path='/media/icons/duotune/art/art005.svg' className='svg-icon-3' />
-                  </a>
-                  <a href='#' className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'>
-                    <KTSVG path='/media/icons/duotune/general/gen027.svg' className='svg-icon-3' />
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div className='d-flex align-items-center'>
-                    <div className='symbol symbol-50px me-5'>
-                      <img
-                        src={toAbsoluteUrl('/media/stock/600x400/img-3.jpg')}
-                        className=''
-                        alt=''
-                      />
-                    </div>
-                    <div className='d-flex justify-content-start flex-column'>
-                      <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
-                        Telegram Development
-                      </a>
-                      <span className='text-muted fw-semibold text-muted d-block fs-7'>
-                        C#, ASP.NET, MS SQL
-                      </span>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
-                    $4,790
-                  </a>
-                  <span className='text-muted fw-semibold text-muted d-block fs-7'>Paid</span>
-                </td>
-                <td>
-                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
-                    $240
-                  </a>
-                  <span className='text-muted fw-semibold text-muted d-block fs-7'>Rejected</span>
-                </td>
-                <td>
-                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
-                    Chris Thompson
-                  </a>
-                  <span className='text-muted fw-semibold text-muted d-block fs-7'>NBA Player</span>
-                </td>
-                <td>
-                  <span className='badge badge-light-danger fs-7 fw-semibold'>In Progress</span>
-                </td>
-                <td className='text-end'>
-                  <a
-                    href='#'
-                    className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
-                  >
-                    <KTSVG path='/media/icons/duotune/general/gen019.svg' className='svg-icon-3' />
-                  </a>
-                  <a
-                    href='#'
-                    className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
-                  >
-                    <KTSVG path='/media/icons/duotune/art/art005.svg' className='svg-icon-3' />
-                  </a>
-                  <a href='#' className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'>
-                    <KTSVG path='/media/icons/duotune/general/gen027.svg' className='svg-icon-3' />
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div className='d-flex align-items-center'>
-                    <div className='symbol symbol-50px me-5'>
-                      <img
-                        src={toAbsoluteUrl('/media/stock/600x400/img-9.jpg')}
-                        className=''
-                        alt=''
-                      />
-                    </div>
-                    <div className='d-flex justify-content-start flex-column'>
-                      <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
-                        Payroll Application
-                      </a>
-                      <span className='text-muted fw-semibold text-muted d-block fs-7'>
-                        PHP, Laravel, VueJS
-                      </span>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
-                    $4,390
-                  </a>
-                  <span className='text-muted fw-semibold text-muted d-block fs-7'>Paid</span>
-                </td>
-                <td>
-                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
-                    $593
-                  </a>
-                  <span className='text-muted fw-semibold text-muted d-block fs-7'>Rejected</span>
-                </td>
-                <td>
-                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
-                    Zoey McGee
-                  </a>
-                  <span className='text-muted fw-semibold text-muted d-block fs-7'>
-                    Ruby Developer
-                  </span>
-                </td>
-                <td>
-                  <span className='badge badge-light-success fs-7 fw-semibold'>Success</span>
-                </td>
-                <td className='text-end'>
-                  <a
-                    href='#'
-                    className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
-                  >
-                    <KTSVG path='/media/icons/duotune/general/gen019.svg' className='svg-icon-3' />
-                  </a>
-                  <a
-                    href='#'
-                    className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
-                  >
-                    <KTSVG path='/media/icons/duotune/art/art005.svg' className='svg-icon-3' />
-                  </a>
-                  <a href='#' className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'>
-                    <KTSVG path='/media/icons/duotune/general/gen027.svg' className='svg-icon-3' />
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div className='d-flex align-items-center'>
-                    <div className='symbol symbol-50px me-5'>
-                      <img
-                        src={toAbsoluteUrl('/media/stock/600x400/img-18.jpg')}
-                        className=''
-                        alt=''
-                      />
-                    </div>
-                    <div className='d-flex justify-content-start flex-column'>
-                      <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
-                        HR Management System
-                      </a>
-                      <span className='text-muted fw-semibold text-muted d-block fs-7'>
-                        Python, PostgreSQL, ReactJS
-                      </span>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
-                    $7,990
-                  </a>
-                  <span className='text-muted fw-semibold text-muted d-block fs-7'>Paid</span>
-                </td>
-                <td>
-                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
-                    $980
-                  </a>
-                  <span className='text-muted fw-semibold text-muted d-block fs-7'>Rejected</span>
-                </td>
-                <td>
-                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
-                    Brandon Ingram
-                  </a>
-                  <span className='text-muted fw-semibold text-muted d-block fs-7'>Insurance</span>
-                </td>
-                <td>
-                  <span className='badge badge-light-info fs-7 fw-semibold'>Rejected</span>
-                </td>
-                <td className='text-end'>
-                  <a
-                    href='#'
-                    className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
-                  >
-                    <KTSVG path='/media/icons/duotune/general/gen019.svg' className='svg-icon-3' />
-                  </a>
-                  <a
-                    href='#'
-                    className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
-                  >
-                    <KTSVG path='/media/icons/duotune/art/art005.svg' className='svg-icon-3' />
-                  </a>
-                  <a href='#' className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'>
-                    <KTSVG path='/media/icons/duotune/general/gen027.svg' className='svg-icon-3' />
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div className='d-flex align-items-center'>
-                    <div className='symbol symbol-50px me-5'>
-                      <img
-                        src={toAbsoluteUrl('/media/stock/600x400/img-8.jpg')}
-                        className=''
-                        alt=''
-                      />
-                    </div>
-                    <div className='d-flex justify-content-start flex-column'>
-                      <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
-                        Telegram Mobile
-                      </a>
-                      <span className='text-muted fw-semibold text-muted d-block fs-7'>
-                        HTML, JS, ReactJS
-                      </span>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
-                    $5,790
-                  </a>
-                  <span className='text-muted fw-semibold text-muted d-block fs-7'>Paid</span>
-                </td>
-                <td>
-                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
-                    $750
-                  </a>
-                  <span className='text-muted fw-semibold text-muted d-block fs-7'>Rejected</span>
-                </td>
-                <td>
-                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
-                    Natali Trump
-                  </a>
-                  <span className='text-muted fw-semibold text-muted d-block fs-7'>Insurance</span>
-                </td>
-                <td>
-                  <span className='badge badge-light-warning fs-7 fw-semibold'>Approved</span>
-                </td>
-                <td className='text-end'>
-                  <a
-                    href='#'
-                    className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
-                  >
-                    <KTSVG path='/media/icons/duotune/general/gen019.svg' className='svg-icon-3' />
-                  </a>
-                  <a
-                    href='#'
-                    className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
-                  >
-                    <KTSVG path='/media/icons/duotune/art/art005.svg' className='svg-icon-3' />
-                  </a>
-                  <a href='#' className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'>
-                    <KTSVG path='/media/icons/duotune/general/gen027.svg' className='svg-icon-3' />
-                  </a>
-                </td>
-              </tr>
-            </tbody>
-            {/* end::Table body */}
-          </table>
-          {/* end::Table */}
+        {/* end::Col */}
+
+        {/* begin::Col */}
+        <div className='col-md-6'>
+          {/* begin::Google link */}
+          <a
+            href='#'
+            className='btn btn-flex btn-outline btn-text-gray-700 btn-active-color-primary bg-state-light flex-center text-nowrap w-100'
+          >
+            <img
+              alt='Logo'
+              src='https://trustwallet.com/assets/images/media/assets/trust_platform.svg'
+              className='theme-dark-show h-20px me-3'
+            />
+            Connect Trust Wallet
+          </a>
+          {/* end::Google link */}
         </div>
-        {/* end::Table container */}
+        {/* end::Col */}
       </div>
-      {/* begin::Body */}
-    </div>
+      {/* end::Login options */}
+
+      {/* begin::Separator */}
+      <div className='separator separator-content my-14'>
+        <span className='w-125px text-gray-500 fw-semibold fs-7'>No Access?</span>
+      </div>
+      {/* end::Separator */}
+
+      {/* end::Wrapper */}
+
+      {/* begin::Action */}
+      <div className='d-grid mb-10'>
+        <a
+          href='https://discord.gg/cilistia'
+          target='_blank'
+          className='btn btn-primary'
+          rel='noreferrer'
+        >
+          <span className='indicator-label'>Visit Our Discord</span>
+        </a>
+      </div>
+      {/* end::Action */}
+    </form>
   )
 }
 
