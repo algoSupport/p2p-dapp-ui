@@ -8,7 +8,7 @@ type Props = {
 
 const TablesWidget11: React.FC<Props> = ({className}) => {
   return (
-    <form className='form w-400px mx-auto mt-20'>
+    <form className='form mw-350px mx-auto mt-20'>
       {/* begin::Heading */}
       <div className='text-center mb-11'>
         <h1 className='text-dark fw-bolder mb-3'>Wallet Connect</h1>
@@ -30,7 +30,7 @@ const TablesWidget11: React.FC<Props> = ({className}) => {
               src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/1024px-MetaMask_Fox.svg.png?20220831120339'
               className='h-20px me-3'
             />
-            Connect Metamask
+            Metamask
           </a>
           {/* end::Google link */}
         </div>
@@ -48,7 +48,7 @@ const TablesWidget11: React.FC<Props> = ({className}) => {
               src='https://trustwallet.com/assets/images/media/assets/trust_platform.svg'
               className='theme-dark-show h-20px me-3'
             />
-            Connect Trust Wallet
+            Trust Wallet
           </a>
           {/* end::Google link */}
         </div>
