@@ -37,7 +37,7 @@ const ToolbarClassic = () => {
           data-kt-daterangepicker='true'
           data-kt-daterangepicker-opens='left'
           className={clsx(
-            'btn btn-sm fw-bold  d-flex align-items-center px-4 disabled',
+            'btn btn-sm fw-bold  d-flex align-items-center px-4',
             daterangepickerButtonClass
           )}
         >
@@ -58,7 +58,7 @@ const ToolbarClassic = () => {
           onClick={() => setShowCreateAppModal(true)}
           className='btn btn-sm fw-bold btn-primary disabled'
           data-bs-toggle='modal'
-          data-bs-target='#kt_modal_create_app'
+          data-bs-target='##kt_modal_create_app'
         >
           Create
         </a>
