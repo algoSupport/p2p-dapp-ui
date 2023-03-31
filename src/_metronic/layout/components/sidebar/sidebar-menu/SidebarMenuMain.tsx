@@ -16,13 +16,13 @@ const SidebarMenuMain = () => {
         </div>
       </div>
       <SidebarMenuItem
-        to='/dashboard'
+        to='dashboard'
         icon='/media/icons/duotune/text/txt009.svg'
         title='Active listings'
         fontIcon='bi-app-indicator'
       />
       <SidebarMenuItem
-        to='/create-offer'
+        to=''
         icon='/media/icons/duotune/general/gen041.svg'
         title='Create an offer'
         fontIcon='bi-layers'
@@ -34,27 +34,27 @@ const SidebarMenuMain = () => {
         </div>
       </div>
       <SidebarMenuItem
-        to='/overview'
+        to=''
         title='Overview'
         fontIcon='bi-archive'
         icon='/media/icons/duotune/general/gen032.svg'
       ></SidebarMenuItem>
 
       <SidebarMenuItem
-        to='/crafted/widgets/tables'
+        to=''
         icon='/media/icons/duotune/text/txt001.svg'
         title='Listings'
         fontIcon='bi-layers'
       />
 
       <SidebarMenuItem
-        to='/crafted/accounts'
+        to=''
         title='History'
         icon='/media/icons/duotune/abstract/abs015.svg'
         fontIcon='bi-person'
       ></SidebarMenuItem>
       <SidebarMenuItem
-        to='/crafted/pages/profile/overview'
+        to=''
         title='Profile'
         fontIcon='bi-sticky'
         icon='/media/icons/duotune/general/gen049.svg'
@@ -66,7 +66,7 @@ const SidebarMenuMain = () => {
         </div>
       </div>
       <SidebarMenuItem
-        to='/error'
+        to=''
         title='Staking'
         fontIcon='bi-sticky'
         icon='/media/icons/duotune/general/gen049.svg'
@@ -78,19 +78,19 @@ const SidebarMenuMain = () => {
         </div>
       </div>
       <SidebarMenuItem
-        to='/test'
+        to=''
         title='Statistics'
         fontIcon='bi-chat-left'
         icon='/media/icons/duotune/graphs/gra003.svg'
       ></SidebarMenuItem>
       <SidebarMenuItem
-        to='/apps/user-management/users'
+        to=''
         icon='/media/icons/duotune/general/gen051.svg'
         title='Audit Reports'
         fontIcon='bi-layers'
       />
       <SidebarMenuItem
-        to='/apps/user-management/users'
+        to=''
         icon='/media/icons/duotune/general/gen048.svg'
         title='Governance'
         fontIcon='bi-layers'
