@@ -93,7 +93,7 @@ const TablesWidget11: React.FC<Props> = ({className}) => {
       <div className='modal fade mt-20' tabIndex={-1} id='kt_modal_1'>
         <div className='modal-dialog'>
           <div className='modal-content'>
-            <div className='modal-header'>
+            <div className='modal-header py-3'>
               <h5 className='modal-title'>Gain Access</h5>
               <div
                 className='btn btn-icon btn-sm btn-active-light-primary ms-2'
@@ -106,7 +106,7 @@ const TablesWidget11: React.FC<Props> = ({className}) => {
                 />
               </div>
             </div>
-            <div className='modal-body overlay overlay-block'>
+            <div className='modal-body py-8 overlay overlay-block'>
               <div>
                 <input
                   type='email'
@@ -120,7 +120,7 @@ const TablesWidget11: React.FC<Props> = ({className}) => {
                 </div>
               </div>
             </div>
-            <div className='modal-footer'>
+            <div className='modal-footer py-2'>
               <button type='button' className='btn btn-light btn-sm' data-bs-dismiss='modal'>
                 Close
               </button>
