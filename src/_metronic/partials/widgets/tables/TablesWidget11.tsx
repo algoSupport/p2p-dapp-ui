@@ -1,13 +1,16 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import {KTSVG} from '../../../helpers'
+import {useState} from 'react'
 import {useRef} from 'react'
+import {CreateAppModal, Dropdown1} from '../../../partials'
 
 type Props = {
   className: string
 }
 
 const TablesWidget11: React.FC<Props> = ({className}) => {
+  const [showCreateAppModal, setShowCreateAppModal] = useState<boolean>(false)
   const btnRef = useRef<HTMLButtonElement | null>(null)
   const onClick = () => {
     // Disable indicator after 3 seconds
@@ -131,15 +134,20 @@ const TablesWidget11: React.FC<Props> = ({className}) => {
 
         {/* begin::Action */}
         <div className='d-grid mb-10'>
-          <button
-            type='button'
-            className='btn btn-primary'
+          <a
+            href='#'
+            onClick={() => setShowCreateAppModal(true)}
+            className='btn fw-bold btn-primary'
             data-bs-toggle='modal'
-            data-bs-target='#kt_modal_1'
+            data-bs-target='#kt_modal_create_app'
           >
-            Verify Wallet Address
-          </button>
+            Request Access
+          </a>
         </div>
+        <CreateAppModal
+          show={showCreateAppModal}
+          handleClose={() => setShowCreateAppModal(false)}
+        />
       </div>
     </>
   )

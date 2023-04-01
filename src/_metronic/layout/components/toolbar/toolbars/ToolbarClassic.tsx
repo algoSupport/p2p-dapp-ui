@@ -58,7 +58,7 @@ const ToolbarClassic = () => {
           onClick={() => setShowCreateAppModal(true)}
           className='btn btn-sm fw-bold btn-primary disabled'
           data-bs-toggle='modal'
-          data-bs-target='##kt_modal_create_app'
+          data-bs-target='#kt_modal_create_app'
         >
           Create
         </a>
