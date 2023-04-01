@@ -2,19 +2,9 @@
 import {FC} from 'react'
 import {CreateAppModal} from '../../../partials'
 import {useState} from 'react'
-import {useRef} from 'react'
 
 const HeaderUserMenu: FC = () => {
   const [showCreateAppModal, setShowCreateAppModal] = useState<boolean>(false)
-  const btnRef = useRef<HTMLButtonElement | null>(null)
-  const onClick = () => {
-    // Disable indicator after 3 seconds
-    btnRef.current?.setAttribute('data-kt-indicator', 'on')
-    setTimeout(() => {
-      // Activate indicator
-      btnRef.current?.removeAttribute('data-kt-indicator')
-    }, 3000)
-  }
   return (
     <>
       <a
