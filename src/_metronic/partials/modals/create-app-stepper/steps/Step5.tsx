@@ -11,8 +11,8 @@ const Step5 = () => {
 
           {/* begin::Description */}
           <div className='text-muted fs-6'>
-            If you do not have access to the Wallet Connect after submission, you will be notified
-            on Discord when you receive access.
+            If you are unable to connect your wallet after submission, you will be notified on
+            Discord when you receive access.
           </div>
           {/* end::Description */}
         </div>
