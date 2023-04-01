@@ -86,7 +86,7 @@ const CreateAppModal = ({show, handleClose}: Props) => {
       id='kt_modal_create_app'
       tabIndex={-1}
       aria-hidden='true'
-      dialogClassName='modal-dialog modal-dialog-centered mw-900px mx-auto'
+      dialogClassName='modal-dialog modal-dialog-centered mw-750px mx-auto'
       show={show}
       onHide={handleClose}
       onEntered={loadStepper}
