@@ -4,7 +4,7 @@ import {useLayout} from '../../../core'
 import {usePageData} from '../../../core/PageData'
 
 const PageTitle = () => {
-  const {pageTitle, pageDescription, pageBreadcrumbs} = usePageData()
+  const {pageTitle, pageBreadcrumbs} = usePageData()
   const {config, classes} = useLayout()
   const appPageTitleDirection = config.app?.pageTitle?.direction
 
