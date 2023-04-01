@@ -3,7 +3,6 @@ import {FC} from 'react'
 import {useIntl} from 'react-intl'
 import {PageTitle} from '../../../_metronic/layout/core'
 import {TablesWidget11} from '../../../_metronic/partials/widgets'
-import {TablesWidget13} from '../../../_metronic/partials/widgets'
 
 const DashboardPage: FC = () => (
   <>

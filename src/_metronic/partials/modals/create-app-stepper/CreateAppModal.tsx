@@ -93,7 +93,7 @@ const CreateAppModal = ({show, handleClose}: Props) => {
       backdrop={true}
     >
       <div className='modal-header py-4'>
-        <h5 className='mb-0'>Request Access</h5>
+        <h5 className='mb-0'>Verify Wallet</h5>
         {/* begin::Close */}
         <div className='btn btn-sm btn-icon btn-active-color-primary' onClick={handleClose}>
           <KTSVG className='svg-icon-1' path='/media/icons/duotune/arrows/arr061.svg' />
@@ -127,7 +127,7 @@ const CreateAppModal = ({show, handleClose}: Props) => {
                   <div className='stepper-label'>
                     <h3 className='stepper-title'>Step 1</h3>
 
-                    <div className='stepper-desc'>Discord Username</div>
+                    <div className='stepper-desc'>Wallet Address</div>
                   </div>
                   {/* end::Label*/}
                 </div>
@@ -154,7 +154,7 @@ const CreateAppModal = ({show, handleClose}: Props) => {
                   <div className='stepper-label'>
                     <h3 className='stepper-title'>Step 2</h3>
 
-                    <div className='stepper-desc'>Submit</div>
+                    <div className='stepper-desc'>Verify</div>
                   </div>
                   {/* end::Label*/}
                 </div>

@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import {KTSVG} from '../../../../../_metronic/helpers'
+
 import {StepProps} from '../IAppModels'
 
 const Step1 = ({data, updateData, hasError}: StepProps) => {
@@ -9,18 +9,18 @@ const Step1 = ({data, updateData, hasError}: StepProps) => {
         {/*begin::Form Group */}
         <div className='fv-row mb-10'>
           <label className='d-flex align-items-center fs-5 fw-semibold mb-2'>
-            <span className='required'>Discord Username</span>
+            <span className='required'>Wallet Address</span>
             <i
               className='fas fa-exclamation-circle ms-2 fs-7'
               data-bs-toggle='tooltip'
-              title='Please share your discord username'
+              title='Please share your wallet address'
             ></i>
           </label>
           <input
             type='text'
             className='form-control form-control-lg form-control-solid'
             name='appname'
-            placeholder='username#1234'
+            placeholder='0x0000....0000'
             value={data.appBasic.appName}
             onChange={(e) =>
               updateData({
@@ -34,7 +34,7 @@ const Step1 = ({data, updateData, hasError}: StepProps) => {
           {!data.appBasic.appName && hasError && (
             <div className='fv-plugins-message-container'>
               <div data-field='username' data-validator='notEmpty' className='fv-help-block'>
-                Discord username is required
+                Wallet address is required
               </div>
             </div>
           )}

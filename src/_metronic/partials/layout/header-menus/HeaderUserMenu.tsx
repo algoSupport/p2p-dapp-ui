@@ -1,14 +1,33 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import {FC} from 'react'
-import {Link} from 'react-router-dom'
-import {useAuth} from '../../../../app/modules/auth'
+import {CreateAppModal} from '../../../partials'
+import {useState} from 'react'
+import {useRef} from 'react'
 
 const HeaderUserMenu: FC = () => {
-  const {currentUser, logout} = useAuth()
+  const [showCreateAppModal, setShowCreateAppModal] = useState<boolean>(false)
+  const btnRef = useRef<HTMLButtonElement | null>(null)
+  const onClick = () => {
+    // Disable indicator after 3 seconds
+    btnRef.current?.setAttribute('data-kt-indicator', 'on')
+    setTimeout(() => {
+      // Activate indicator
+      btnRef.current?.removeAttribute('data-kt-indicator')
+    }, 3000)
+  }
   return (
-    <a href='#' className='btn btn-primary btn-sm'>
-      <span className='indicator-label'>Connect Wallet</span>
-    </a>
+    <>
+      <a
+        href='#'
+        onClick={() => setShowCreateAppModal(true)}
+        className='btn btn-sm btn-primary'
+        data-bs-toggle='modal'
+        data-bs-target='#kt_modal_create_app'
+      >
+        Verify Wallet
+      </a>
+      <CreateAppModal show={showCreateAppModal} handleClose={() => setShowCreateAppModal(false)} />
+    </>
   )
 }
 

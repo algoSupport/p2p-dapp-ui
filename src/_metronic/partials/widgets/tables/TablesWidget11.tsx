@@ -3,7 +3,7 @@ import React from 'react'
 import {KTSVG} from '../../../helpers'
 import {useState} from 'react'
 import {useRef} from 'react'
-import {CreateAppModal, Dropdown1} from '../../../partials'
+import {CreateAppModal} from '../../../partials'
 
 type Props = {
   className: string
@@ -141,7 +141,7 @@ const TablesWidget11: React.FC<Props> = ({className}) => {
             data-bs-toggle='modal'
             data-bs-target='#kt_modal_create_app'
           >
-            Request Access
+            Verify Wallet
           </a>
         </div>
         <CreateAppModal
