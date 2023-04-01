@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
-import {KTSVG, toAbsoluteUrl} from '../../../helpers'
+import {KTSVG} from '../../../helpers'
+import {CreateAppModal} from '../../../partials'
 
 type Props = {
   className: string
@@ -62,7 +63,7 @@ const TablesWidget11: React.FC<Props> = ({className}) => {
 
         {/* begin::Separator */}
         <div className='separator separator-content my-14'>
-          <span className='w-125px text-gray-500 fw-semibold fs-7'>No Access?</span>
+          <span className='w-125px text-gray-500 fw-semibold fs-7'>Verify</span>
         </div>
         {/* end::Separator */}
 
@@ -70,16 +71,51 @@ const TablesWidget11: React.FC<Props> = ({className}) => {
 
         {/* begin::Action */}
         <div className='d-grid mb-10'>
-          <a
-            href='https://discord.gg/cilistia'
-            target='_blank'
+          <button
+            type='button'
             className='btn btn-primary'
-            rel='noreferrer'
+            data-bs-toggle='modal'
+            data-bs-target='#kt_modal_1'
           >
-            <span className='indicator-label'>Visit Our Discord</span>
-          </a>
+            Verify Wallet Address
+          </button>
         </div>
-        {/* end::Action */}
+      </div>
+      <div className='modal fade mt-20' tabIndex={-1} id='kt_modal_1'>
+        <div className='modal-dialog'>
+          <div className='modal-content'>
+            <div className='modal-header'>
+              <h5 className='modal-title'>Gain Access</h5>
+              <div
+                className='btn btn-icon btn-sm btn-active-light-primary ms-2'
+                data-bs-dismiss='modal'
+                aria-label='Close'
+              >
+                <KTSVG
+                  path='/media/icons/duotune/arrows/arr061.svg'
+                  className='svg-icon svg-icon-2x'
+                />
+              </div>
+            </div>
+            <div className='modal-body'>
+              <div>
+                <input
+                  type='email'
+                  className='form-control form-control-solid'
+                  placeholder='Enter your wallet address'
+                />
+              </div>
+            </div>
+            <div className='modal-footer'>
+              <button type='button' className='btn btn-light btn-sm' data-bs-dismiss='modal'>
+                Close
+              </button>
+              <button type='button' className='btn btn-primary btn-sm'>
+                Verify
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   )
