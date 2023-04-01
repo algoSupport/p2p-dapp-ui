@@ -94,7 +94,7 @@ const TablesWidget11: React.FC<Props> = ({className}) => {
         <div className='modal-dialog'>
           <div className='modal-content'>
             <div className='modal-header py-3'>
-              <h5 className='modal-title'>Gain Access</h5>
+              <h5 className='modal-title'>Access Cilistia's Testnet</h5>
               <div
                 className='btn btn-icon btn-sm btn-active-light-primary ms-2'
                 data-bs-dismiss='modal'
