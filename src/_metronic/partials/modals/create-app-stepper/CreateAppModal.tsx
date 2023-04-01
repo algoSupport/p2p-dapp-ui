@@ -101,7 +101,7 @@ const CreateAppModal = ({show, handleClose}: Props) => {
         {/* end::Close */}
       </div>
 
-      <div className='modal-body py-lg-10 px-lg-10'>
+      <div className='modal-body py-lg-8 px-lg-8'>
         {/*begin::Stepper */}
         <div
           ref={stepperRef}

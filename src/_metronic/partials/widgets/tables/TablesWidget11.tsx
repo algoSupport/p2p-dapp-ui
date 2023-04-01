@@ -126,7 +126,7 @@ const TablesWidget11: React.FC<Props> = ({className}) => {
 
         {/* begin::Separator */}
         <div className='separator separator-content my-14'>
-          <span className='w-125px text-gray-500 fw-semibold fs-7'>Verify</span>
+          <span className='w-150px text-gray-500 fw-semibold fs-7'>Can't Connect?</span>
         </div>
         {/* end::Separator */}
 

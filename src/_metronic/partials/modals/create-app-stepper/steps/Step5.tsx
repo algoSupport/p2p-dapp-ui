@@ -11,20 +11,10 @@ const Step5 = () => {
           {/* end::Heading */}
 
           {/* begin::Description */}
-          <div className='text-muted fw-semibold fs-3'>
+          <div className='text-muted fw-semibold fs-5'>
             Once submitted you will be notified on discord when you have been granted access.
           </div>
           {/* end::Description */}
-
-          {/* begin::Illustration */}
-          <div className='text-center px-4 py-15'>
-            <img
-              src={toAbsoluteUrl('/media/illustrations/sketchy-1/Comp-1.gif')}
-              alt=''
-              className='mw-50 mh-50px'
-            />
-          </div>
-          {/* end::Illustration */}
         </div>
       </div>
     </>
