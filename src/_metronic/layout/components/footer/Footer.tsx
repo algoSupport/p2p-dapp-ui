@@ -11,7 +11,7 @@ const Footer = () => {
     <>
       <div className='text-dark order-1 order-md-1'>
         <span className='text-muted fw-semibold me-1'>
-          {new Date().getFullYear().toString()}&copy;
+          {new Date().getFullYear().toString()} &copy;
         </span>
         <a href='https://cilistia.com' target='_blank' className='text-gray-800 text-hover-primary'>
           {' '}
