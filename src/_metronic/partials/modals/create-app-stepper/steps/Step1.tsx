@@ -20,7 +20,7 @@ const Step1 = ({data, updateData, hasError}: StepProps) => {
             type='text'
             className='form-control form-control-lg form-control-solid'
             name='appname'
-            placeholder=''
+            placeholder='username#1234'
             value={data.appBasic.appName}
             onChange={(e) =>
               updateData({
