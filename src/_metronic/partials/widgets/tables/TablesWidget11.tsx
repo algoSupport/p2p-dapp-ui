@@ -19,6 +19,57 @@ const TablesWidget11: React.FC<Props> = ({className}) => {
   }
   return (
     <>
+      <div className='modal fade' tabIndex={-1} id='kt_modal_1'>
+        <div className='modal-dialog modal-dialog-centered'>
+          <div className='modal-content'>
+            <div className='modal-header py-3'>
+              <h5 className='modal-title'>Access Cilistia's Testnet</h5>
+              <div
+                className='btn btn-icon btn-sm btn-active-light-primary ms-2'
+                data-bs-dismiss='modal'
+                aria-label='Close'
+              >
+                <KTSVG
+                  path='/media/icons/duotune/arrows/arr061.svg'
+                  className='svg-icon svg-icon-2x'
+                />
+              </div>
+            </div>
+            <div className='modal-body py-8 overlay overlay-block'>
+              <div>
+                <input
+                  type='email'
+                  className='form-control form-control-white required'
+                  placeholder='Enter your wallet address'
+                />
+              </div>
+              <div className='overlay-layer bg-dark bg-opacity-5'>
+                <div className='spinner-border text-primary' role='status'>
+                  <span className='visually-hidden'>Loading...</span>
+                </div>
+              </div>
+            </div>
+            <div className='modal-footer py-2'>
+              <button type='button' className='btn btn-light btn-sm' data-bs-dismiss='modal'>
+                Close
+              </button>
+              <button
+                ref={btnRef}
+                onClick={onClick}
+                type='button'
+                className='btn btn-primary btn-sm disabled'
+                id='kt_button_1'
+              >
+                <span className='indicator-label'>Verify</span>
+                <span className='indicator-progress'>
+                  Please wait...
+                  <span className='spinner-border spinner-border-sm align-middle ms-2'></span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className='form mw-350px mx-auto mt-20'>
         {/* begin::Heading */}
 
@@ -88,57 +139,6 @@ const TablesWidget11: React.FC<Props> = ({className}) => {
           >
             Verify Wallet Address
           </button>
-        </div>
-      </div>
-      <div className='modal fade mt-20' tabIndex={-1} id='kt_modal_1'>
-        <div className='modal-dialog'>
-          <div className='modal-content'>
-            <div className='modal-header py-3'>
-              <h5 className='modal-title'>Access Cilistia's Testnet</h5>
-              <div
-                className='btn btn-icon btn-sm btn-active-light-primary ms-2'
-                data-bs-dismiss='modal'
-                aria-label='Close'
-              >
-                <KTSVG
-                  path='/media/icons/duotune/arrows/arr061.svg'
-                  className='svg-icon svg-icon-2x'
-                />
-              </div>
-            </div>
-            <div className='modal-body py-8 overlay overlay-block'>
-              <div>
-                <input
-                  type='email'
-                  className='form-control form-control-white required'
-                  placeholder='Enter your wallet address'
-                />
-              </div>
-              <div className='overlay-layer bg-dark bg-opacity-5'>
-                <div className='spinner-border text-primary' role='status'>
-                  <span className='visually-hidden'>Loading...</span>
-                </div>
-              </div>
-            </div>
-            <div className='modal-footer py-2'>
-              <button type='button' className='btn btn-light btn-sm' data-bs-dismiss='modal'>
-                Close
-              </button>
-              <button
-                ref={btnRef}
-                onClick={onClick}
-                type='button'
-                className='btn btn-primary btn-sm disabled'
-                id='kt_button_1'
-              >
-                <span className='indicator-label'>Verify</span>
-                <span className='indicator-progress'>
-                  Please wait...
-                  <span className='spinner-border spinner-border-sm align-middle ms-2'></span>
-                </span>
-              </button>
-            </div>
-          </div>
         </div>
       </div>
     </>
