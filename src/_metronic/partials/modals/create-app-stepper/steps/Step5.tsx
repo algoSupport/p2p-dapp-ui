@@ -11,7 +11,7 @@ const Step5 = () => {
           {/* end::Heading */}
 
           {/* begin::Description */}
-          <div className='text-muted fw-semibold fs-5'>
+          <div className='text-muted fs-6'>
             Once submitted you will be notified on discord when you have been granted access.
           </div>
           {/* end::Description */}
