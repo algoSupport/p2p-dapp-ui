@@ -128,7 +128,7 @@ const TablesWidget11: React.FC<Props> = ({className}) => {
                 ref={btnRef}
                 onClick={onClick}
                 type='button'
-                className='btn btn-primary btn-sm'
+                className='btn btn-primary btn-sm disabled'
                 id='kt_button_1'
               >
                 <span className='indicator-label'>Verify</span>
