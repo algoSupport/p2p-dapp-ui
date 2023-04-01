@@ -7,7 +7,7 @@ const Step5 = () => {
       <div data-kt-stepper-element='content'>
         <div className='w-100 text-center'>
           {/* begin::Heading */}
-          <h1 className='fw-bold text-dark mb-3'>Submit Your Request</h1>
+          <h1 className='fw-bold text-dark mb-3 fs-3'>Submit Your Request</h1>
           {/* end::Heading */}
 
           {/* begin::Description */}
