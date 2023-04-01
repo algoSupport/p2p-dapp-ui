@@ -1,13 +1,22 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import {KTSVG} from '../../../helpers'
-import {CreateAppModal} from '../../../partials'
+import {useRef} from 'react'
 
 type Props = {
   className: string
 }
 
 const TablesWidget11: React.FC<Props> = ({className}) => {
+  const btnRef = useRef<HTMLButtonElement | null>(null)
+  const onClick = () => {
+    // Disable indicator after 3 seconds
+    btnRef.current?.setAttribute('data-kt-indicator', 'on')
+    setTimeout(() => {
+      // Activate indicator
+      btnRef.current?.removeAttribute('data-kt-indicator')
+    }, 3000)
+  }
   return (
     <>
       <div className='form mw-350px mx-auto mt-20'>
@@ -97,21 +106,36 @@ const TablesWidget11: React.FC<Props> = ({className}) => {
                 />
               </div>
             </div>
-            <div className='modal-body'>
+            <div className='modal-body overlay overlay-block'>
               <div>
                 <input
                   type='email'
-                  className='form-control form-control-solid'
+                  className='form-control form-control-solid required'
                   placeholder='Enter your wallet address'
                 />
+              </div>
+              <div className='overlay-layer bg-dark bg-opacity-5'>
+                <div className='spinner-border text-primary' role='status'>
+                  <span className='visually-hidden'>Loading...</span>
+                </div>
               </div>
             </div>
             <div className='modal-footer'>
               <button type='button' className='btn btn-light btn-sm' data-bs-dismiss='modal'>
                 Close
               </button>
-              <button type='button' className='btn btn-primary btn-sm'>
-                Verify
+              <button
+                ref={btnRef}
+                onClick={onClick}
+                type='button'
+                className='btn btn-primary btn-sm'
+                id='kt_button_1'
+              >
+                <span className='indicator-label'>Verify</span>
+                <span className='indicator-progress'>
+                  Please wait...
+                  <span className='spinner-border spinner-border-sm align-middle ms-2'></span>
+                </span>
               </button>
             </div>
           </div>
