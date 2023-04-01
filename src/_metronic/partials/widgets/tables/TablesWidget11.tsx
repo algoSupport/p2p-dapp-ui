@@ -110,7 +110,7 @@ const TablesWidget11: React.FC<Props> = ({className}) => {
               <div>
                 <input
                   type='email'
-                  className='form-control form-control-solid required'
+                  className='form-control form-control-white required'
                   placeholder='Enter your wallet address'
                 />
               </div>
