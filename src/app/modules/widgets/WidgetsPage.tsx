@@ -5,7 +5,7 @@ import {Feeds} from './components/Feeds'
 import {Lists} from './components/Lists'
 import {Tables} from './components/Tables'
 import {Mixed} from './components/Mixed'
-import {Statistics} from './components/Statistics'
+import {Stats} from './components/Statistics'
 
 const widgetsBreadCrumbs: Array<PageLink> = [
   {
@@ -76,7 +76,7 @@ const WidgetsPage = () => {
           element={
             <>
               <PageTitle breadcrumbs={widgetsBreadCrumbs}>Statiscics</PageTitle>
-              <Statistics />
+              <Stats />
             </>
           }
         />

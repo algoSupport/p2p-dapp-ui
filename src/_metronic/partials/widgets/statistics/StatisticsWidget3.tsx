@@ -91,8 +91,8 @@ function getChartOptions(
   const options: ApexOptions = {
     series: [
       {
-        name: 'Net Profit',
-        data: [30, 45, 32, 70, 40],
+        name: 'Buy orders',
+        data: [0, 0, 0, 0, 0, 0, 0],
       },
     ],
     chart: {
@@ -127,7 +127,7 @@ function getChartOptions(
       colors: [baseColor],
     },
     xaxis: {
-      categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+      categories: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
       axisBorder: {
         show: false,
       },
@@ -192,7 +192,7 @@ function getChartOptions(
       },
       y: {
         formatter: function (val) {
-          return '$' + val + ' thousands'
+          return val + ' Orders'
         },
       },
     },

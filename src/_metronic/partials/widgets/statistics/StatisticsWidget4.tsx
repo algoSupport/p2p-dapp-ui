@@ -88,8 +88,8 @@ function getChartOptions(
   return {
     series: [
       {
-        name: 'Net Profit',
-        data: [40, 40, 30, 30, 35, 35, 50],
+        name: 'Total Value Locked',
+        data: [0, 0, 0, 0, 0, 0, 0],
       },
     ],
     chart: {
