@@ -17,7 +17,7 @@ const SidebarMenuMain = () => {
         fontIcon='bi-app-indicator'
       />
       <SidebarMenuItem
-        to=''
+        to='create-listing'
         icon='/media/icons/duotune/general/gen041.svg'
         title='Create an offer'
         fontIcon='bi-layers'
@@ -29,27 +29,27 @@ const SidebarMenuMain = () => {
         </div>
       </div>
       <SidebarMenuItem
-        to=''
+        to='overview'
         title='Overview'
         fontIcon='bi-archive'
         icon='/media/icons/duotune/general/gen032.svg'
       ></SidebarMenuItem>
 
       <SidebarMenuItem
-        to=''
+        to='my-listings'
         icon='/media/icons/duotune/text/txt001.svg'
         title='Listings'
         fontIcon='bi-layers'
       />
 
       <SidebarMenuItem
-        to=''
+        to='history'
         title='History'
         icon='/media/icons/duotune/abstract/abs015.svg'
         fontIcon='bi-person'
       ></SidebarMenuItem>
       <SidebarMenuItem
-        to=''
+        to='profile'
         title='Profile'
         fontIcon='bi-sticky'
         icon='/media/icons/duotune/general/gen049.svg'
@@ -61,7 +61,7 @@ const SidebarMenuMain = () => {
         </div>
       </div>
       <SidebarMenuItem
-        to=''
+        to='staking'
         title='Staking'
         fontIcon='bi-sticky'
         icon='/media/icons/duotune/general/gen049.svg'
@@ -73,19 +73,19 @@ const SidebarMenuMain = () => {
         </div>
       </div>
       <SidebarMenuItem
-        to=''
+        to='statistics'
         title='Statistics'
         fontIcon='bi-chat-left'
         icon='/media/icons/duotune/graphs/gra003.svg'
       ></SidebarMenuItem>
       <SidebarMenuItem
-        to=''
+        to='audits'
         icon='/media/icons/duotune/general/gen051.svg'
         title='Audit Reports'
         fontIcon='bi-layers'
       />
       <SidebarMenuItem
-        to=''
+        to='governance'
         icon='/media/icons/duotune/general/gen048.svg'
         title='Governance'
         fontIcon='bi-layers'

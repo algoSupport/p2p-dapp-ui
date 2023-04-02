@@ -2,7 +2,7 @@
 import {FC} from 'react'
 import {TablesWidget11} from '../../_metronic/partials/widgets'
 
-const Overview: FC = () => {
+const Statistics: FC = () => {
   return (
     <>
       <TablesWidget11 className='mb-5 mb-xl-8' />
@@ -10,4 +10,4 @@ const Overview: FC = () => {
   )
 }
 
-export {Overview}
+export {Statistics}
