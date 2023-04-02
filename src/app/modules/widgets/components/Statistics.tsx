@@ -11,7 +11,7 @@ const Stats: FC = () => {
     <>
       {/* begin::Row */}
       <div className='row g-5 g-xl-8'>
-        <h4 className='text-muted'>Protocol Statistics</h4>
+        <h4>Statistics</h4>
         <div className='col-xl-4'>
           <StatisticsWidget3
             className='card-xl-stretch mb-xl-8'
