@@ -5,7 +5,6 @@ import {
   MixedWidget3,
   MixedWidget4,
   MixedWidget5,
-  MixedWidget6,
   MixedWidget7,
   MixedWidget8,
   MixedWidget9,
@@ -189,38 +188,6 @@ const Mixed: FC = () => {
       </div>
       {/* end::Row */}
 
-      {/* begin::Row */}
-      <div className='row g-5 g-xl-8'>
-        {/* begin::Col */}
-        <div className='col-xl-4'>
-          <MixedWidget6
-            className='card-xl-stretch mb-xl-8'
-            chartColor='primary'
-            chartHeight='150px'
-          />
-        </div>
-        {/* end::Col */}
-
-        {/* begin::Col */}
-        <div className='col-xl-4'>
-          <MixedWidget6
-            className='card-xl-stretch mb-xl-8'
-            chartColor='danger'
-            chartHeight='150px'
-          />
-        </div>
-        {/* end::Col */}
-
-        {/* begin::Col */}
-        <div className='col-xl-4'>
-          <MixedWidget6
-            className='card-xl-stretch mb-5 mb-xl-8'
-            chartColor='success'
-            chartHeight='150px'
-          />
-        </div>
-        {/* end::Col */}
-      </div>
       {/* end::Row */}
 
       {/* begin::Row */}

@@ -1,18 +1,16 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, {useEffect, useRef} from 'react'
 import ApexCharts, {ApexOptions} from 'apexcharts'
-import {KTSVG} from '../../../helpers'
 import {getCSSVariableValue} from '../../../assets/ts/_utils'
-import {Dropdown1} from '../../content/dropdown/Dropdown1'
 import {useThemeMode} from '../../layout/theme-mode/ThemeModeProvider'
 
 type Props = {
   className: string
-  chartHeight: string
   chartColor: string
+  chartHeight: string
 }
 
-const MixedWidget6: React.FC<Props> = ({className, chartHeight, chartColor}) => {
+const MixedWidget20: React.FC<Props> = ({className, chartColor, chartHeight}) => {
   const chartRef = useRef<HTMLDivElement | null>(null)
   const {mode} = useThemeMode()
   const refreshChart = () => {
@@ -20,7 +18,7 @@ const MixedWidget6: React.FC<Props> = ({className, chartHeight, chartColor}) => 
       return
     }
 
-    const chart = new ApexCharts(chartRef.current, chartOptions(chartHeight, chartColor))
+    const chart = new ApexCharts(chartRef.current, chartOptions(chartColor, chartHeight))
     if (chart) {
       chart.render()
     }
@@ -41,112 +39,26 @@ const MixedWidget6: React.FC<Props> = ({className, chartHeight, chartColor}) => 
 
   return (
     <div className={`card ${className}`}>
-      {/* begin::Beader */}
-      <div className='card-header border-0 py-5'>
-        <h3 className='card-title align-items-start flex-column'>
-          <span className='card-label fw-bold fs-3 mb-1'>Sales Overview</span>
-
-          <span className='text-muted fw-semibold fs-7'>Recent sales statistics</span>
-        </h3>
-
-        <div className='card-toolbar'>
-          {/* begin::Menu */}
-          <button
-            type='button'
-            className='btn btn-sm btn-icon btn-color-primary btn-active-light-primary'
-            data-kt-menu-trigger='click'
-            data-kt-menu-placement='bottom-end'
-            data-kt-menu-flip='top-end'
-          >
-            <KTSVG path='/media/icons/duotune/general/gen024.svg' className='svg-icon-2' />
-          </button>
-          <Dropdown1 />
-          {/* end::Menu */}
-        </div>
-      </div>
-      {/* end::Header */}
-
       {/* begin::Body */}
-      <div className='card-body p-0 d-flex flex-column'>
+      <div className='card-body d-flex flex-column p-0'>
         {/* begin::Stats */}
-        <div className='card-p pt-5 bg-body flex-grow-1'>
-          {/* begin::Row */}
-          <div className='row g-0'>
-            {/* begin::Col */}
-            <div className='col mr-8'>
-              {/* begin::Label */}
-              <div className='fs-7 text-muted fw-semibold'>Average Sale</div>
-              {/* end::Label */}
+        <div className='flex-grow-1 card-p pb-0'>
+          <div className='d-flex flex-stack flex-wrap'>
+            <div className='me-2'>
+              <a href='#' className='text-dark text-hover-primary fw-bold fs-3'>
+                Revenue
+              </a>
 
-              {/* begin::Stat */}
-              <div className='d-flex align-items-center'>
-                <div className='fs-4 fw-bold'>$650</div>
-                <KTSVG
-                  path='/media/icons/duotune/arrows/arr066.svg'
-                  className='svg-icon-5 svg-icon-success ms-1'
-                />
-              </div>
-              {/* end::Stat */}
+              <div className='text-muted fs-7 fw-semibold'>Marketplace Earnings</div>
             </div>
-            {/* end::Col */}
 
-            {/* begin::Col */}
-            <div className='col'>
-              {/* begin::Label */}
-              <div className='fs-7 text-muted fw-semibold'>Commission</div>
-              {/* end::Label */}
-
-              {/* begin::Stat */}
-              <div className='fs-4 fw-bold'>$233,600</div>
-              {/* end::Stat */}
-            </div>
-            {/* end::Col */}
+            <div className={`fw-bold fs-3 text-${chartColor}`}>$3,922.04</div>
           </div>
-          {/* end::Row */}
-
-          {/* begin::Row */}
-          <div className='row g-0 mt-8'>
-            {/* begin::Col */}
-            <div className='col mr-8'>
-              {/* begin::Label */}
-              <div className='fs-7 text-muted fw-semibold'>Annual Taxes 2019</div>
-              {/* end::Label */}
-
-              {/* begin::Stat */}
-              <div className='fs-4 fw-bold'>$29,004</div>
-              {/* end::Stat */}
-            </div>
-            {/* end::Col */}
-
-            {/* begin::Col */}
-            <div className='col'>
-              {/* begin::Label */}
-              <div className='fs-7 text-muted fw-semibold'>Annual Income</div>
-              {/* end::Label */}
-
-              {/* begin::Stat */}
-              <div className='d-flex align-items-center'>
-                <div className='fs-4 fw-bold'>$1,480,00</div>
-                <KTSVG
-                  path='/media/icons/duotune/arrows/arr065.svg'
-                  className='svg-icon-5 svg-icon-danger ms-1'
-                />
-              </div>
-              {/* end::Stat */}
-            </div>
-            {/* end::Col */}
-          </div>
-          {/* end::Row */}
         </div>
         {/* end::Stats */}
 
         {/* begin::Chart */}
-        <div
-          ref={chartRef}
-          className='mixed-widget-3-chart card-rounded-bottom'
-          data-kt-chart-color={chartColor}
-          style={{height: chartHeight}}
-        ></div>
+        <div ref={chartRef} className='mixed-widget-7-chart card-rounded-bottom'></div>
         {/* end::Chart */}
       </div>
       {/* end::Body */}
@@ -154,7 +66,7 @@ const MixedWidget6: React.FC<Props> = ({className, chartHeight, chartColor}) => 
   )
 }
 
-const chartOptions = (chartHeight: string, chartColor: string): ApexOptions => {
+const chartOptions = (chartColor: string, chartHeight: string): ApexOptions => {
   const labelColor = getCSSVariableValue('--bs-gray-800')
   const strokeColor = getCSSVariableValue('--bs-gray-300')
   const baseColor = getCSSVariableValue('--bs-' + chartColor)
@@ -163,8 +75,8 @@ const chartOptions = (chartHeight: string, chartColor: string): ApexOptions => {
   return {
     series: [
       {
-        name: 'Net Profit',
-        data: [30, 25, 45, 30, 55, 55],
+        name: 'Total',
+        data: [0, 0, 0, 0, 3.9],
       },
     ],
     chart: {
@@ -199,7 +111,7 @@ const chartOptions = (chartHeight: string, chartColor: string): ApexOptions => {
       colors: [baseColor],
     },
     xaxis: {
-      categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+      categories: ['Dec', 'Jan', 'Feb', 'Mar', 'Apr'],
       axisBorder: {
         show: false,
       },
@@ -264,7 +176,7 @@ const chartOptions = (chartHeight: string, chartColor: string): ApexOptions => {
       },
       y: {
         formatter: function (val) {
-          return '$' + val + ' thousands'
+          return val + ' K'
         },
       },
     },
@@ -277,4 +189,4 @@ const chartOptions = (chartHeight: string, chartColor: string): ApexOptions => {
   }
 }
 
-export {MixedWidget6}
+export {MixedWidget20}

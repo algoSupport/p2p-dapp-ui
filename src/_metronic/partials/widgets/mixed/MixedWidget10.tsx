@@ -46,13 +46,13 @@ const MixedWidget10: React.FC<Props> = ({className, chartColor, chartHeight}) =>
           <div className='d-flex flex-stack flex-wrap'>
             <div className='me-2'>
               <a href='#' className='text-dark text-hover-primary fw-bold fs-3'>
-                Generate Reports
+                $CIL Staked
               </a>
 
-              <div className='text-muted fs-7 fw-semibold'>Finance and accounting reports</div>
+              <div className='text-muted fs-7 fw-semibold'>Staked $CIL Tokens</div>
             </div>
 
-            <div className={`fw-bold fs-3 text-${chartColor}`}>$24,500</div>
+            <div className={`fw-bold fs-3 text-${chartColor}`}>53,922.04</div>
           </div>
         </div>
         {/* end::Stats */}
@@ -75,8 +75,8 @@ const chartOptions = (chartColor: string, chartHeight: string): ApexOptions => {
   return {
     series: [
       {
-        name: 'Net Profit',
-        data: [15, 25, 15, 40, 20, 50],
+        name: 'Total',
+        data: [0, 0, 0, 0, 53],
       },
     ],
     chart: {
@@ -111,7 +111,7 @@ const chartOptions = (chartColor: string, chartHeight: string): ApexOptions => {
       colors: [baseColor],
     },
     xaxis: {
-      categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+      categories: ['Dec', 'Jan', 'Feb', 'Mar', 'Apr'],
       axisBorder: {
         show: false,
       },
@@ -176,7 +176,7 @@ const chartOptions = (chartColor: string, chartHeight: string): ApexOptions => {
       },
       y: {
         formatter: function (val) {
-          return '$' + val + ' thousands'
+          return val + ' K'
         },
       },
     },
