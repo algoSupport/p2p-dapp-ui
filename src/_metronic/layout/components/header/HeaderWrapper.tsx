@@ -35,7 +35,7 @@ export function HeaderWrapper() {
                 <KTSVG path='/media/icons/duotune/abstract/abs015.svg' className=' svg-icon-1' />
               </div>
               <div className='d-flex align-items-center flex-grow-1 flex-lg-grow-0'>
-                <Link to='/dashboard' className='d-lg-none'>
+                <Link to='/marketplace' className='d-lg-none'>
                   <img
                     alt='Logo'
                     src={toAbsoluteUrl('/media/logos/default-small.png')}

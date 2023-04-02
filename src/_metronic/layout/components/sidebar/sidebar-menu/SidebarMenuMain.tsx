@@ -11,7 +11,7 @@ const SidebarMenuMain = () => {
         </div>
       </div>
       <SidebarMenuItem
-        to='dashboard'
+        to='marketplace'
         icon='/media/icons/duotune/text/txt009.svg'
         title='Active listings'
         fontIcon='bi-app-indicator'

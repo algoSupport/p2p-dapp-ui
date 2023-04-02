@@ -15,10 +15,8 @@ const PrivateRoutes = () => {
   return (
     <Routes>
       <Route element={<MasterLayout />}>
-        {/* Redirect to Dashboard after success login/registartion */}
-        <Route path='auth/*' element={<Navigate to='/dashboard' />} />
         {/* Pages */}
-        <Route path='dashboard' element={<DashboardWrapper />} />
+        <Route path='marketplace' element={<DashboardWrapper />} />
         <Route path='create-listing' element={<CreateListing />} />
         <Route path='overview' element={<Overview />} />
         <Route path='my-listings' element={<MyListings />} />
@@ -32,7 +30,7 @@ const PrivateRoutes = () => {
         {/* Lazy Modules */}
 
         {/* Page Not Found */}
-        <Route path='*' element={<Navigate to='/error/404' />} />
+        <Route path='*' element={<Navigate to='marketplace' />} />
       </Route>
     </Routes>
   )
