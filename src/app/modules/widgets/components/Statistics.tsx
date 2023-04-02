@@ -17,7 +17,7 @@ const Stats: FC = () => {
             color='success'
             title='Successful Buy Orders'
             description='Buy orders completed in the last 7 days'
-            change='13'
+            change='91'
           />
         </div>
 

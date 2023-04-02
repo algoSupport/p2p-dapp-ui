@@ -92,7 +92,7 @@ function getChartOptions(
     series: [
       {
         name: 'Buy orders',
-        data: [0, 0, 0, 0, 0, 0, 0],
+        data: [0, 0, 0, 0, 0, 22, 69],
       },
     ],
     chart: {
