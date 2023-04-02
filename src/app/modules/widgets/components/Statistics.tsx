@@ -48,7 +48,7 @@ const Stats: FC = () => {
         <div className='col-xl-12'>
           <StatisticsWidget4
             className='card-xl-stretch mb-xl-8'
-            svgIcon='/media/icons/duotune/general/gen025.svg'
+            svgIcon='/media/icons/duotune/general/gen032.svg'
             color='primary'
             description='TVL'
             change='$0.00'
