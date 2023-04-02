@@ -2,11 +2,11 @@
 import {FC} from 'react'
 import {useIntl} from 'react-intl'
 import {PageTitle} from '../../../_metronic/layout/core'
-import {TablesWidget11} from '../../../_metronic/partials/widgets'
+import {WalletConnect} from '../../../_metronic/partials/widgets/_new/wallet/WalletConnect'
 
 const DashboardPage: FC = () => (
   <>
-    <TablesWidget11 className='mb-5 mb-xl-8' />
+    <WalletConnect className='mb-5 mb-xl-8' />
   </>
 )
 
