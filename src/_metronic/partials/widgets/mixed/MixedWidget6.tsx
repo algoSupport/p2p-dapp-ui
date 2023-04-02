@@ -52,7 +52,7 @@ const MixedWidget20: React.FC<Props> = ({className, chartColor, chartHeight}) =>
               <div className='text-muted fs-7 fw-semibold'>Marketplace Earnings</div>
             </div>
 
-            <div className={`fw-bold fs-3 text-${chartColor}`}>$3,922.04</div>
+            <div className={`fw-bold fs-3`}>$3,922.04</div>
           </div>
         </div>
         {/* end::Stats */}

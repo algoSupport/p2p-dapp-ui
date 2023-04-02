@@ -52,7 +52,7 @@ const MixedWidget10: React.FC<Props> = ({className, chartColor, chartHeight}) =>
               <div className='text-muted fs-7 fw-semibold'>Staked $CIL Tokens</div>
             </div>
 
-            <div className={`fw-bold fs-3 text-${chartColor}`}>53,922.04</div>
+            <div className={`fw-bold fs-3`}>53,922.04</div>
           </div>
         </div>
         {/* end::Stats */}
