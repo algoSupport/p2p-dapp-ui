@@ -17,7 +17,7 @@ const Stats: FC = () => {
           <StatisticsWidget4
             className='card-xl-stretch mb-xl-8 mb-5'
             color='primary'
-            title='$49,036.10'
+            title='TVL'
             description='Total Value Locked'
             change='+173%'
           />
