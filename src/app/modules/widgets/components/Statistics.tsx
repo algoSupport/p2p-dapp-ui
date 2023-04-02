@@ -12,6 +12,17 @@ const Stats: FC = () => {
       {/* begin::Row */}
       <div className='row g-5 g-xl-8'>
         <h4>Statistics</h4>
+        <div className='col-xl-12'>
+          <StatisticsWidget4
+            className='card-xl-stretch mb-xl-8'
+            color='primary'
+            title='$49,036.10'
+            description='Total Value Locked'
+            change='+173%'
+          />
+        </div>
+      </div>
+      <div className='row g-5 g-xl-8'>
         <div className='col-xl-4'>
           <StatisticsWidget3
             className='card-xl-stretch mb-xl-8'
@@ -35,7 +46,7 @@ const Stats: FC = () => {
         <div className='col-xl-4'>
           <StatisticsWidget7
             className='card-xl-stretch mb-5 mb-xl-8'
-            color='primary'
+            color='info'
             title='Active Traders'
             description='Active traders on the marketplace'
             change='93'
@@ -45,17 +56,7 @@ const Stats: FC = () => {
       {/* end::Row */}
 
       {/* begin::Row */}
-      <div className='row'>
-        <div className='col-xl-12'>
-          <StatisticsWidget4
-            className='card-xl-stretch mb-xl-8'
-            svgIcon='/media/icons/duotune/general/gen032.svg'
-            color='primary'
-            description='TVL'
-            change='$47,430.17'
-          />
-        </div>
-      </div>
+
       {/* end::Row */}
     </>
   )

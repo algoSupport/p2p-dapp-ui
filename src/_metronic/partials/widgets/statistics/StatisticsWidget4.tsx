@@ -1,20 +1,18 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, {useEffect, useRef} from 'react'
-import {KTSVG} from '../../../helpers'
 import ApexCharts, {ApexOptions} from 'apexcharts'
 import {getCSS, getCSSVariableValue} from '../../../assets/ts/_utils'
-import clsx from 'clsx'
 import {useThemeMode} from '../../layout/theme-mode/ThemeModeProvider'
 
 type Props = {
   className: string
-  svgIcon: string
-  color: string
-  change: string
+  title: string
   description: string
+  change: string
+  color: string
 }
 
-const StatisticsWidget4: React.FC<Props> = ({className, svgIcon, color, change, description}) => {
+const StatisticsWidget4: React.FC<Props> = ({className, title, description, change, color}) => {
   const chartRef = useRef<HTMLDivElement | null>(null)
   const {mode} = useThemeMode()
   const refreshChart = () => {
@@ -51,24 +49,28 @@ const StatisticsWidget4: React.FC<Props> = ({className, svgIcon, color, change, 
   return (
     <div className={`card ${className}`}>
       {/* begin::Body */}
-      <div className='card-body p-0'>
-        <div className='d-flex flex-stack card-p flex-grow-1'>
-          <span className={clsx('symbol symbol-50px', `symbol-light-${color}`, 'me-2')}>
-            <span className='symbol-label'>
-              <KTSVG path={svgIcon} className={`svg-icon-2x svg-icon-${color}`} />
+      <div className='card-body d-flex flex-column p-0'>
+        <div className='d-flex flex-stack flex-grow-1 card-p'>
+          <div className='d-flex flex-column me-2'>
+            <a href='#' className='text-dark text-hover-primary fw-bold fs-3'>
+              {title}
+            </a>
+
+            <span
+              className='text-muted fw-semibold mt-1'
+              dangerouslySetInnerHTML={{__html: description}}
+            ></span>
+          </div>
+
+          <span className='symbol symbol-50px'>
+            <span className={`symbol-label fs-8 fw-bold bg-light-${color} text-${color}`}>
+              {change}
             </span>
           </span>
-
-          <div className='d-flex flex-column text-end'>
-            <span className='text-dark fw-bold fs-2'>{change}</span>
-
-            <span className='text-muted fw-semibold mt-1'>{description}</span>
-          </div>
         </div>
-
         <div
           ref={chartRef}
-          className='statistics-widget-4-chart card-rounded-bottom'
+          className='statistics-widget-3-chart card-rounded-bottom'
           style={{height: '150px'}}
         ></div>
       </div>
