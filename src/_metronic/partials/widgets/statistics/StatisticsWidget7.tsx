@@ -92,7 +92,7 @@ function getChartOptions(
     series: [
       {
         name: 'Active Traders',
-        data: [0, 0, 0, 0, 0, 33, 60],
+        data: [0, 0, 0, 0, 0, 33, 80],
       },
     ],
     chart: {

@@ -50,7 +50,7 @@ const Stats: FC = () => {
             color='info'
             title='Active Traders'
             description='Active traders on the marketplace'
-            change='93'
+            change='117'
           />
         </div>
         <div className='col-xl-12 mt-0'>
