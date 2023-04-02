@@ -79,15 +79,15 @@ const SidebarMenuMain = () => {
         icon='/media/icons/duotune/graphs/gra003.svg'
       ></SidebarMenuItem>
       <SidebarMenuItem
-        to='audits'
-        icon='/media/icons/duotune/general/gen051.svg'
-        title='Audit Reports'
-        fontIcon='bi-layers'
-      />
-      <SidebarMenuItem
         to='governance'
         icon='/media/icons/duotune/general/gen048.svg'
         title='Governance'
+        fontIcon='bi-layers'
+      />
+      <SidebarMenuItem
+        to='audits'
+        icon='/media/icons/duotune/general/gen051.svg'
+        title='Audit Reports'
         fontIcon='bi-layers'
       />
     </>

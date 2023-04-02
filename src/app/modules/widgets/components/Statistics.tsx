@@ -10,7 +10,7 @@ const Stats: FC = () => {
   return (
     <>
       {/* begin::Row */}
-      <div className='row g-5 g-xl-8 mt-4'>
+      <div className='row g-5 g-xl-8 mt-1'>
         <div className='col-xl-4'>
           <StatisticsWidget3
             className='card-xl-stretch mb-xl-8'
