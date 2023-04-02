@@ -28,7 +28,7 @@ const Stats: FC = () => {
           <StatisticsWidget3
             className='card-xl-stretch mb-xl-8'
             color='success'
-            title='Successful Buy Orders'
+            title='Buy Orders'
             description='Buy orders completed in the last 7 days'
             change='91'
           />
@@ -38,7 +38,7 @@ const Stats: FC = () => {
           <StatisticsWidget8
             className='card-xl-stretch mb-xl-8'
             color='danger'
-            title='Successful Sell Orders'
+            title='Sell Orders'
             description='Sell orders completed in the last 7 days'
             change='60'
           />
