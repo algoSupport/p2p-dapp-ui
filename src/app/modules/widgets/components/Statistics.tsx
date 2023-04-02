@@ -51,7 +51,7 @@ const Stats: FC = () => {
             svgIcon='/media/icons/duotune/general/gen032.svg'
             color='primary'
             description='TVL'
-            change='$0.00'
+            change='$47,430.17'
           />
         </div>
       </div>

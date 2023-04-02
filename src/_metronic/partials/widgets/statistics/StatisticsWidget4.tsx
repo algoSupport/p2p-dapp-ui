@@ -89,7 +89,7 @@ function getChartOptions(
     series: [
       {
         name: 'Total Value Locked',
-        data: [0, 0, 0, 0, 0, 0, 0],
+        data: [0, 0, 0, 0, 47],
       },
     ],
     chart: {
@@ -124,7 +124,7 @@ function getChartOptions(
       colors: [baseColor],
     },
     xaxis: {
-      categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
+      categories: ['Dec', 'Jan', 'Feb', 'Mar', 'Apr'],
       axisBorder: {
         show: false,
       },
@@ -189,7 +189,7 @@ function getChartOptions(
       },
       y: {
         formatter: function (val) {
-          return '$' + val + ' thousands'
+          return '$' + val + 'K'
         },
       },
     },
