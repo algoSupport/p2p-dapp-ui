@@ -2,7 +2,8 @@ import React, {FC} from 'react'
 import {
   StatisticsWidget3,
   StatisticsWidget4,
-  StatisticsWidget6,
+  StatisticsWidget7,
+  StatisticsWidget8,
 } from '../../../../_metronic/partials/widgets'
 
 const Stats: FC = () => {
@@ -21,7 +22,7 @@ const Stats: FC = () => {
         </div>
 
         <div className='col-xl-4'>
-          <StatisticsWidget3
+          <StatisticsWidget8
             className='card-xl-stretch mb-xl-8'
             color='danger'
             title='Successful Sell Orders'
@@ -31,7 +32,7 @@ const Stats: FC = () => {
         </div>
 
         <div className='col-xl-4'>
-          <StatisticsWidget3
+          <StatisticsWidget7
             className='card-xl-stretch mb-5 mb-xl-8'
             color='primary'
             title='Active Traders'
