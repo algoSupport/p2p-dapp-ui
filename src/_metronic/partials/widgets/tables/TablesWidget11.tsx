@@ -114,7 +114,7 @@ const TablesWidget11: React.FC<Props> = ({className}) => {
               <img
                 alt='Logo'
                 src='https://trustwallet.com/assets/images/media/assets/trust_platform.svg'
-                className='theme-dark-show h-20px me-3'
+                className='h-20px me-3'
               />
               Trust Wallet
             </a>
