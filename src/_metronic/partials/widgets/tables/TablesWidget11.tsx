@@ -73,7 +73,7 @@ const TablesWidget11: React.FC<Props> = ({className}) => {
           </div>
         </div>
       </div>
-      <div className='form mw-350px mx-auto mt-20'>
+      <div className='form mw-350px mx-auto mt-20 pt-20'>
         {/* begin::Heading */}
 
         <div className='text-center mb-11'>
