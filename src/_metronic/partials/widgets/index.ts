@@ -65,6 +65,7 @@ export * from './tables/TablesWidget9'
 export * from './tables/TablesWidget10'
 export * from './tables/BuyCrypto'
 export * from './tables/SellCrypto'
+export * from './tables/TransactionHistory'
 export * from './tables/TablesWidget13'
 
 // engage
