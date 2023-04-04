@@ -74,8 +74,8 @@ export const DefaultConfig: ILayout = {
     },
     toolbar: {
       componentName: 'toolbar',
-      display: false,
-      layout: 'classic',
+      display: true,
+      layout: 'extended',
       class: 'py-5 py-lg-5',
       container: 'fluid',
       containerClass: 'd-flex flex-stack',
