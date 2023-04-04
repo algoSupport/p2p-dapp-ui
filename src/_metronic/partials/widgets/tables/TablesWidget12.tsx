@@ -10,14 +10,14 @@ const TablesWidget12: React.FC<Props> = ({className}) => {
   return (
     <div className={`card ${className}`}>
       {/* begin::Header */}
-      <div className='card-header border-0 pt-5'>
+      <div className='card-header border-0 pt-2'>
         <h3 className='card-title align-items-start flex-column'>
-          <span className='card-label fw-bold fs-3 mb-1'>Sell Crypto</span>
+          <span className='fw-bold fs-6'>Sell Crypto</span>
         </h3>
       </div>
       {/* end::Header */}
       {/* begin::Body */}
-      <div className='card-body py-3'>
+      <div className='card-body py-1'>
         {/* begin::Table container */}
         <div className='table-responsive'>
           {/* begin::Table */}

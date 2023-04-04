@@ -9,12 +9,12 @@ const DashboardPage: FC = () => (
   <>
     <ul className='nav nav-tabs nav-line-tabs mb-5 fs-7'>
       <li className='nav-item'>
-        <a className='nav-link active' data-bs-toggle='tab' href='#kt_tab_pane_1'>
+        <a className='nav-link active fw-bold' data-bs-toggle='tab' href='#kt_tab_pane_1'>
           BUY
         </a>
       </li>
       <li className='nav-item'>
-        <a className='nav-link' data-bs-toggle='tab' href='#kt_tab_pane_2'>
+        <a className='nav-link fw-bold' data-bs-toggle='tab' href='#kt_tab_pane_2'>
           SELL
         </a>
       </li>
