@@ -3,7 +3,6 @@ import {FC, useEffect, useState} from 'react'
 import {KTSVG, toAbsoluteUrl} from '../../../../helpers'
 
 const ToolbarExtended: FC = () => {
-  const [progress, setProgress] = useState<string>('1')
   const [search, setSearch] = useState<string>('')
 
   useEffect(() => {
