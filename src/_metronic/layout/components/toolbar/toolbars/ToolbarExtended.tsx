@@ -33,7 +33,10 @@ const ToolbarExtended: FC = () => {
             <div className='symbol-label fw-bold bg-primary text-inverse-warning'>0x</div>
           </div>
           <div className='symbol symbol-circle symbol-25px'>
-            <div className='symbol-label fw-bold bg-info text-inverse-warning'>0x</div>
+            <div className='symbol-label fw-bold bg-danger text-inverse-warning'>0x</div>
+          </div>
+          <div className='symbol symbol-circle symbol-25px'>
+            <div className='symbol-label fw-bold bg-info text-inverse-warning'>A</div>
           </div>
           {/* end::User */}
         </div>
