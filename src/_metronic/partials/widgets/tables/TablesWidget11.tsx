@@ -10,15 +10,7 @@ const TablesWidget11: React.FC<Props> = ({className}) => {
   const [showCreateAppModal, setShowCreateAppModal] = useState<boolean>(false)
   return (
     <div className={`card ${className}`}>
-      {/* begin::Header */}
-      <div className='card-header border-0 pt-2'>
-        <h3 className='card-title align-items-start flex-column'>
-          <span className='fw-bold fs-6'>Buy Crypto</span>
-        </h3>
-      </div>
-      {/* end::Header */}
-      {/* begin::Body */}
-      <div className='card-body py-1'>
+      <div className='card-body p-0 pt-4'>
         {/* begin::Table container */}
         <div className='table-responsive'>
           {/* begin::Table */}
