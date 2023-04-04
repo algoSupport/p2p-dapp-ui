@@ -1,11 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
-import {KTSVG, toAbsoluteUrl} from '../../../helpers'
+import {CreateAppModal} from '../../../partials'
+import {useState} from 'react'
 type Props = {
   className: string
 }
 
 const TablesWidget11: React.FC<Props> = ({className}) => {
+  const [showCreateAppModal, setShowCreateAppModal] = useState<boolean>(false)
   return (
     <div className={`card ${className}`}>
       {/* begin::Header */}
@@ -35,10 +37,26 @@ const TablesWidget11: React.FC<Props> = ({className}) => {
             {/* end::Table head */}
             {/* begin::Table body */}
             <tbody>
-              <tr></tr>
               <tr>
                 <td colSpan={6} className='text-muted text-center mt-2'>
                   Please connect your wallet to view available offers.
+                </td>
+              </tr>
+              <tr>
+                <td colSpan={6} className='text-muted text-center mt-2'>
+                  <a
+                    href='#'
+                    onClick={() => setShowCreateAppModal(true)}
+                    className='btn btn-sm btn-primary'
+                    data-bs-toggle='modal'
+                    data-bs-target='#kt_modal_create_app'
+                  >
+                    Verify Wallet
+                  </a>
+                  <CreateAppModal
+                    show={showCreateAppModal}
+                    handleClose={() => setShowCreateAppModal(false)}
+                  />
                 </td>
               </tr>
             </tbody>
