@@ -7,15 +7,15 @@ import {TablesWidget12} from '../../../_metronic/partials/widgets'
 
 const DashboardPage: FC = () => (
   <>
-    <ul className='nav nav-tabs nav-line-tabs mb-5 fs-6'>
+    <ul className='nav nav-tabs nav-line-tabs mb-5 fs-7'>
       <li className='nav-item'>
         <a className='nav-link active' data-bs-toggle='tab' href='#kt_tab_pane_1'>
-          Buy
+          BUY
         </a>
       </li>
       <li className='nav-item'>
         <a className='nav-link' data-bs-toggle='tab' href='#kt_tab_pane_2'>
-          Sell
+          SELL
         </a>
       </li>
     </ul>
