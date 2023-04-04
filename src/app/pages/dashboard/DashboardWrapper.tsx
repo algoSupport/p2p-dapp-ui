@@ -2,8 +2,8 @@
 import {FC} from 'react'
 import {useIntl} from 'react-intl'
 import {PageTitle} from '../../../_metronic/layout/core'
-import {TablesWidget11} from '../../../_metronic/partials/widgets'
-import {TablesWidget12} from '../../../_metronic/partials/widgets'
+import {BuyCrypto} from '../../../_metronic/partials/widgets'
+import {SellCrypto} from '../../../_metronic/partials/widgets'
 
 const DashboardPage: FC = () => (
   <>
@@ -44,14 +44,14 @@ const DashboardPage: FC = () => (
           {/* begin::Tap pane */}
           <div className='tab-pane fade show active' id='kt_table_widget_7_tab_1'>
             {/* begin::Table container */}
-            <TablesWidget11 className='mb-5 mb-xl-8' />
+            <BuyCrypto className='mb-5 mb-xl-8' />
             {/* end::Table */}
           </div>
           {/* end::Tap pane */}
           {/* begin::Tap pane */}
           <div className='tab-pane fade' id='kt_table_widget_7_tab_2'>
             {/* begin::Table container */}
-            <TablesWidget12 className='mb-5 mb-xl-8' />
+            <SellCrypto className='mb-5 mb-xl-8' />
             {/* end::Table */}
           </div>
         </div>

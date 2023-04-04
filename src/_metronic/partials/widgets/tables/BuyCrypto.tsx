@@ -1,13 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
-import {CreateAppModal} from '../../../partials'
+import {CreateAppModal} from '../..'
 import {useState} from 'react'
-
 type Props = {
   className: string
 }
 
-const TablesWidget12: React.FC<Props> = ({className}) => {
+const BuyCrypto: React.FC<Props> = ({className}) => {
   const [showCreateAppModal, setShowCreateAppModal] = useState<boolean>(false)
   return (
     <div className={`card ${className}`}>
@@ -19,7 +18,7 @@ const TablesWidget12: React.FC<Props> = ({className}) => {
             {/* begin::Table head */}
             <thead>
               <tr className='fw-bold text-muted bg-light fs-7'>
-                <th className='ps-4 min-w-180px rounded-start'>Buyer</th>
+                <th className='ps-4 min-w-180px rounded-start'>Seller</th>
                 <th className='min-w-100px'>Assets</th>
                 <th className='min-w-100px'>Limits</th>
                 <th className='min-w-100px'>Payment Methods</th>
@@ -63,4 +62,4 @@ const TablesWidget12: React.FC<Props> = ({className}) => {
   )
 }
 
-export {TablesWidget12}
+export {BuyCrypto}
