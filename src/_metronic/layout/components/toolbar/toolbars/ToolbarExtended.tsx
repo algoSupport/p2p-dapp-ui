@@ -29,6 +29,13 @@ const ToolbarExtended: FC = () => {
             <img src={toAbsoluteUrl('/media/avatars/300-1.jpg')} alt='' />
           </div>
           {/* end::User */}
+          <div className='symbol symbol-circle symbol-25px'>
+            <div className='symbol-label fw-bold bg-primary text-inverse-warning'>0x</div>
+          </div>
+          <div className='symbol symbol-circle symbol-25px'>
+            <div className='symbol-label fw-bold bg-info text-inverse-warning'>0x</div>
+          </div>
+          {/* end::User */}
         </div>
         {/* end::Users */}
       </div>
