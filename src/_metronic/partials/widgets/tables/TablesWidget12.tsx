@@ -32,7 +32,7 @@ const TablesWidget12: React.FC<Props> = ({className}) => {
                 <th className='min-w-100px'>Limits</th>
                 <th className='min-w-100px'>Payment Methods</th>
                 <th className='min-w-100px'>Volume Traded</th>
-                <th className='min-w-100px'>Rating</th>
+                <th className='min-w-100px rounded-end'>Rating</th>
               </tr>
             </thead>
             {/* end::Table head */}
