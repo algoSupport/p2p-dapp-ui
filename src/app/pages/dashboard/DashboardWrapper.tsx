@@ -9,21 +9,21 @@ const DashboardPage: FC = () => (
   <>
     <ul className='nav nav-tabs nav-line-tabs mb-5 fs-7'>
       <li className='nav-item'>
-        <a className='nav-link active fw-bold' data-bs-toggle='tab' href='#kt_tab_pane_1'>
+        <a className='nav-link active fw-bold' data-bs-toggle='tab' href='#buy'>
           BUY
         </a>
       </li>
       <li className='nav-item'>
-        <a className='nav-link fw-bold' data-bs-toggle='tab' href='#kt_tab_pane_2'>
+        <a className='nav-link fw-bold' data-bs-toggle='tab' href='#sell'>
           SELL
         </a>
       </li>
     </ul>
     <div className='tab-content' id='myTabContent'>
-      <div className='tab-pane fade active show' id='kt_tab_pane_1' role='tabpanel'>
+      <div className='tab-pane fade active show' id='buy' role='tabpanel'>
         <TablesWidget11 className='mb-5 mb-xl-8' />
       </div>
-      <div className='tab-pane fade' id='kt_tab_pane_2' role='tabpanel'>
+      <div className='tab-pane fade' id='sell' role='tabpanel'>
         <TablesWidget12 className='mb-5 mb-xl-8' />
       </div>
     </div>
