@@ -11,17 +11,17 @@ const Stats: FC = () => {
   return (
     <>
       {/* begin::Row */}
-      <div className='row g-5 g-xl-8'>
-        <h4>Statistics</h4>
-        <div className='col-xl-12'>
-          <StatisticsWidget4
-            className='card-xl-stretch mb-xl-8 mb-5'
-            color='primary'
-            title='TVL'
-            description='Total Value Locked'
-            change='+173%'
-          />
-        </div>
+      <div className='row g-5 g-xl-8 mb-6 fs-6 fw-bold'>
+        <span>Statistics</span>
+      </div>
+      <div className='col-xl-12'>
+        <StatisticsWidget4
+          className='card-xl-stretch mb-xl-8 mb-5'
+          color='primary'
+          title='TVL'
+          description='Total Value Locked'
+          change='+173%'
+        />
       </div>
       <div className='row g-5 g-xl-8'>
         <div className='col-xl-4'>
