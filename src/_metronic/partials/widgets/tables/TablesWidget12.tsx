@@ -26,18 +26,19 @@ const TablesWidget12: React.FC<Props> = ({className}) => {
             <thead>
               <tr className='fw-bold text-muted bg-light fs-7'>
                 <th className='ps-4 min-w-180px rounded-start'>Buyer</th>
+                <th className='min-w-100px'>Assets</th>
                 <th className='min-w-100px'>Limits</th>
                 <th className='min-w-100px'>Payment Methods</th>
                 <th className='min-w-100px'>Volume Traded</th>
                 <th className='min-w-100px'>Rating</th>
-                <th className='min-w-100px text-end rounded-end'></th>
               </tr>
             </thead>
             {/* end::Table head */}
             {/* begin::Table body */}
             <tbody>
+              <tr></tr>
               <tr>
-                <td colSpan={5} className='text-muted'>
+                <td colSpan={6} className='text-muted text-center mt-2'>
                   Please connect your wallet to view available offers.
                 </td>
               </tr>
