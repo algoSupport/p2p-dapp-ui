@@ -85,7 +85,7 @@ const WalletConnect: React.FC<Props> = ({className}) => {
         {/* begin::Heading */}
 
         {/* begin::Login options */}
-        <div className='row g-3 mb-9'>
+        <div className='row g-3 mb-5'>
           {/* begin::Col */}
           <div className='col-md-6'>
             {/* begin::Google link */}
