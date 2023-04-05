@@ -18,7 +18,7 @@ const DashboardPage: FC = () => (
           <ul className='nav'>
             <li className='nav-item'>
               <a
-                className='nav-link btn btn-sm btn-color-muted btn-active btn-active-light-primary active fw-bold px-4 me-1'
+                className='btn btn-sm btn-color-muted btn-active btn-active-light-primary active px-4 me-1'
                 data-bs-toggle='tab'
                 href='#kt_table_widget_7_tab_1'
               >
@@ -27,7 +27,7 @@ const DashboardPage: FC = () => (
             </li>
             <li className='nav-item'>
               <a
-                className='nav-link btn btn-sm btn-color-muted btn-active btn-active-light-primary fw-bold px-4 me-1'
+                className='btn btn-sm btn-color-muted btn-active btn-active-light-primary px-4 me-1'
                 data-bs-toggle='tab'
                 href='#kt_table_widget_7_tab_2'
               >
