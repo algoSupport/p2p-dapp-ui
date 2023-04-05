@@ -5,16 +5,21 @@ import {ScrollTop} from './components/scroll-top'
 import {Content} from './components/content'
 import {FooterWrapper} from './components/footer'
 import {Sidebar} from './components/sidebar'
-import {
-  DrawerMessenger,
-  ActivityDrawer,
-  InviteUsers,
-  UpgradePlan,
-  ThemeModeProvider,
-} from '../partials'
+import {ThemeModeProvider} from '../partials'
 import {PageDataProvider} from './core'
 import {reInitMenu} from '../helpers'
 import {ToolbarWrapper} from './components/toolbar'
+const hideToolbarPaths = [
+  '/overview',
+  '/create-listing',
+  '/history',
+  '/my-listings',
+  '/profile',
+  '/staking',
+  '/statistics',
+  '/governance',
+  '/audits',
+]
 
 const MasterLayout = () => {
   const location = useLocation()
@@ -43,15 +48,15 @@ const MasterLayout = () => {
           </div>
         </div>
 
-        {/* begin:: Drawers */}
+        {/* begin:: Drawers 
         <ActivityDrawer />
         <DrawerMessenger />
-        {/* end:: Drawers */}
+        end:: Drawers */}
 
-        {/* begin:: Modals */}
+        {/* begin:: Modals
         <InviteUsers />
         <UpgradePlan />
-        {/* end:: Modals */}
+        end:: Modals */}
         <ScrollTop />
       </ThemeModeProvider>
     </PageDataProvider>
