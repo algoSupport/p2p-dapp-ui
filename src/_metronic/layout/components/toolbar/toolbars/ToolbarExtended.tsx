@@ -18,18 +18,14 @@ const ToolbarExtended: FC = () => {
 
         {/* begin::Users */}
         <div className='symbol-group symbol-hover flex-shrink-0 me-2'>
-          {/* begin::User 
-          <div className='symbol symbol-circle symbol-25px'>
-            <div className='symbol-label fw-bold bg-warning text-inverse-warning'>0x</div>
-          </div>
-          */}
+          {/* begin::User */}
+
           {/* end::User */}
 
-          {/* begin::User 
+          {/* begin::User */}
           <div className='symbol symbol-circle symbol-25px'>
             <img src={toAbsoluteUrl('/media/avatars/300-1.jpg')} alt='' />
           </div>
-          */}
           {/* end::User */}
           <div className='symbol symbol-circle symbol-25px'>
             <div className='symbol-label fw-bold bg-primary text-inverse-warning'>0x</div>
