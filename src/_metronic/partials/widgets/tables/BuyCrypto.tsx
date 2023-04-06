@@ -20,6 +20,7 @@ const BuyCrypto: React.FC<Props> = ({className}) => {
               <tr className='fw-bold text-muted bg-light fs-7'>
                 <th className='ps-4 min-w-180px rounded-start'>Seller</th>
                 <th className='min-w-100px'>Assets</th>
+                <th className='min-w-100px'>Avg. Trade Speed</th>
                 <th className='min-w-100px'>Limits</th>
                 <th className='min-w-100px'>Payment Methods</th>
                 <th className='min-w-100px'>Volume Traded</th>
@@ -30,12 +31,12 @@ const BuyCrypto: React.FC<Props> = ({className}) => {
             {/* begin::Table body */}
             <tbody>
               <tr>
-                <td colSpan={6} className='text-muted text-center mt-2'>
+                <td colSpan={7} className='text-muted text-center mt-2'>
                   Please connect your wallet to view available offers.
                 </td>
               </tr>
               <tr>
-                <td colSpan={6} className='text-muted text-center mt-2'>
+                <td colSpan={7} className='text-muted text-center mt-2'>
                   <a
                     href='#'
                     onClick={() => setShowCreateAppModal(true)}
