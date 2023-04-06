@@ -2,7 +2,7 @@
 
 import {StepProps} from '../IAppModels'
 
-const Step1 = ({data, updateData, hasError}: StepProps) => {
+const Step1 = ({data, updateData, hasError, setHasError}: StepProps) => {
   return (
     <div className='current' data-kt-stepper-element='content'>
       <div className='w-100'>
@@ -22,16 +22,17 @@ const Step1 = ({data, updateData, hasError}: StepProps) => {
             name='appname'
             placeholder='Please enter your access code:'
             value={data.appBasic.appName}
-            onChange={(e) =>
+            onChange={(e) => {
               updateData({
                 appBasic: {
                   appName: e.target.value,
                   appType: data.appBasic.appType,
                 },
               })
-            }
+              if (e.target.value) setHasError(false)
+            }}
           />
-          {!data.appBasic.appName ? (
+          {!data.appBasic.appName && hasError ? (
             <div className='fv-plugins-message-container'>
               <div data-field='username' data-validator='notEmpty' className='fv-help-block'>
                 Access code is required.

@@ -30,4 +30,5 @@ export type StepProps = {
   data: ICreateAppData
   updateData: (fieldsToUpdate: Partial<ICreateAppData>) => void
   hasError: boolean
+  setHasError: (hasError: boolean) => void
 }

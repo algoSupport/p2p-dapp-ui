@@ -125,7 +125,7 @@ const CreateAppModal = ({show, handleClose}: Props) => {
           <div className='flex-row-fluid py-lg-5 px-lg-5'>
             {/*begin::Form */}
             <form noValidate id='kt_modal_create_app_form'>
-              <Step1 data={data} updateData={updateData} hasError={hasError} />
+              <Step1 data={data} updateData={updateData} hasError={hasError} setHasError={setHasError} />
               {/* <Step5 /> */}
 
               {/*begin::Actions */}
