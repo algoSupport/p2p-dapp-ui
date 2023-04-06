@@ -9,18 +9,18 @@ const Step1 = ({data, updateData, hasError}: StepProps) => {
         {/*begin::Form Group */}
         <div className='fv-row mb-10'>
           <label className='d-flex align-items-center fs-5 fw-semibold mb-2'>
-            <span className='required'>Wallet Address</span>
+            <span className='required'>Secret Code</span>
             <i
               className='fas fa-exclamation-circle ms-2 fs-7'
               data-bs-toggle='tooltip'
-              title='Please share your wallet address'
+              title='Please share your Secret Code'
             ></i>
           </label>
           <input
             type='text'
             className='form-control form-control-lg form-control-solid'
             name='appname'
-            placeholder='0x0000....0000'
+            placeholder=''
             value={data.appBasic.appName}
             onChange={(e) =>
               updateData({
@@ -31,12 +31,20 @@ const Step1 = ({data, updateData, hasError}: StepProps) => {
               })
             }
           />
-          {!data.appBasic.appName && hasError && (
+          {!data.appBasic.appName ? (
             <div className='fv-plugins-message-container'>
               <div data-field='username' data-validator='notEmpty' className='fv-help-block'>
-                Wallet address is required
+                Secret Code is required
               </div>
             </div>
+          ) : hasError ? (
+            <div className='fv-plugins-message-container'>
+              <div data-field='username' data-validator='notEmpty' className='fv-help-block'>
+                Invalid Secret Code. Pleast try again.
+              </div>
+            </div>
+          ) : (
+            ''
           )}
         </div>
 
