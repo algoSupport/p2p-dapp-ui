@@ -9,11 +9,11 @@ const Step1 = ({data, updateData, hasError}: StepProps) => {
         {/*begin::Form Group */}
         <div className='fv-row mb-10'>
           <label className='d-flex align-items-center fs-5 fw-semibold mb-2'>
-            <span className='required'>Secret Code</span>
+            <span className='required'>Access Code</span>
             <i
               className='fas fa-exclamation-circle ms-2 fs-7'
               data-bs-toggle='tooltip'
-              title='Please share your Secret Code'
+              title='Please enter your access code:'
             ></i>
           </label>
           <input
@@ -34,13 +34,13 @@ const Step1 = ({data, updateData, hasError}: StepProps) => {
           {!data.appBasic.appName ? (
             <div className='fv-plugins-message-container'>
               <div data-field='username' data-validator='notEmpty' className='fv-help-block'>
-                Secret Code is required
+                Access code is required.
               </div>
             </div>
           ) : hasError ? (
             <div className='fv-plugins-message-container'>
               <div data-field='username' data-validator='notEmpty' className='fv-help-block'>
-                Invalid Secret Code. Pleast try again.
+                Invalid access code. Pleast try again.
               </div>
             </div>
           ) : (

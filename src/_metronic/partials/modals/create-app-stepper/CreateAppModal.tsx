@@ -8,9 +8,9 @@ import {StepperComponent} from '../../../assets/ts/components'
 import {KTSVG} from '../../../helpers'
 import {Step1} from './steps/Step1'
 import {Step5} from './steps/Step5'
-import { useVerify } from '../../../../hooks/useVerify'
-import { keccak256 } from "ethers";
-import { verify } from '../../../../helpers'
+import {useVerify} from '../../../../hooks/useVerify'
+import {keccak256} from 'ethers'
+import {verify} from '../../../../helpers'
 
 type Props = {
   show: boolean
@@ -82,7 +82,7 @@ const CreateAppModal = ({show, handleClose}: Props) => {
 
   const onVerify = async () => {
     if (await verify(data.appBasic.appName)) {
-      localStorage.setItem('secret',  keccak256(new TextEncoder().encode(data.appBasic.appName)))
+      localStorage.setItem('secret', keccak256(new TextEncoder().encode(data.appBasic.appName)))
       setHasError(false)
       handleClose()
     } else {
@@ -99,7 +99,7 @@ const CreateAppModal = ({show, handleClose}: Props) => {
       id='kt_modal_create_app'
       tabIndex={-1}
       aria-hidden='true'
-      dialogClassName='modal-dialog modal-dialog-centered mw-750px mx-auto'
+      dialogClassName='modal-dialog modal-dialog-centered mw-500px mx-auto'
       show={show}
       onHide={handleClose}
       onEntered={loadStepper}
@@ -114,7 +114,7 @@ const CreateAppModal = ({show, handleClose}: Props) => {
         {/* end::Close */}
       </div>
 
-      <div className='modal-body py-lg-8 px-lg-8'>
+      <div className='modal-body py-lg-2 px-lg-2'>
         {/*begin::Stepper */}
         <div
           ref={stepperRef}
@@ -122,14 +122,14 @@ const CreateAppModal = ({show, handleClose}: Props) => {
           id='kt_modal_create_app_stepper'
         >
           {/*begin::Content */}
-          <div className='flex-row-fluid py-lg-5 px-lg-15'>
+          <div className='flex-row-fluid py-lg-5 px-lg-5'>
             {/*begin::Form */}
             <form noValidate id='kt_modal_create_app_form'>
               <Step1 data={data} updateData={updateData} hasError={hasError} />
               {/* <Step5 /> */}
 
               {/*begin::Actions */}
-              <div className='d-flex flex-stack pt-10'>
+              <div className='d-flex flex-stack pt-2'>
                 <div className='me-2'>
                   <button
                     type='button'
@@ -160,7 +160,7 @@ const CreateAppModal = ({show, handleClose}: Props) => {
 
                   <button
                     type='button'
-                    className='btn btn-sm btn-primary'
+                    className='btn btn-sm btn-primary fw-bold'
                     data-kt-stepper-action='next'
                     onClick={onVerify}
                   >
