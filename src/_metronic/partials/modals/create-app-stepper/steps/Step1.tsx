@@ -8,7 +8,7 @@ const Step1 = ({data, updateData, hasError}: StepProps) => {
       <div className='w-100'>
         {/*begin::Form Group */}
         <div className='fv-row mb-10'>
-          <label className='d-flex align-items-center fs-5 fw-semibold mb-2'>
+          <label className='d-flex align-items-center fs-6 fw-semibold mb-2'>
             <span className='required'>Access Code</span>
             <i
               className='fas fa-exclamation-circle ms-2 fs-7'
@@ -20,7 +20,7 @@ const Step1 = ({data, updateData, hasError}: StepProps) => {
             type='text'
             className='form-control form-control-lg form-control-solid'
             name='appname'
-            placeholder=''
+            placeholder='Please enter your access code:'
             value={data.appBasic.appName}
             onChange={(e) =>
               updateData({
