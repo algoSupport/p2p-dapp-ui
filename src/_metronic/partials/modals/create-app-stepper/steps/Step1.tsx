@@ -41,7 +41,7 @@ const Step1 = ({data, updateData, hasError, setHasError}: StepProps) => {
           ) : hasError ? (
             <div className='fv-plugins-message-container'>
               <div data-field='username' data-validator='notEmpty' className='fv-help-block'>
-                Invalid access code. Pleast try again.
+                Invalid access code. Please try again.
               </div>
             </div>
           ) : (
